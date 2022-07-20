@@ -64,8 +64,8 @@ title = 'Amicale du Wifi'
 
   [params.map]
   APIkey = "AIzaSyBT3aRTdVIIPKoLAeNT5N1yeFNtv5kQwCE"
-  latitude = "46.1390744"
-  longitude = "7.1133812"
+  latitude = "46.1390726"
+  longitude = "7.1144756"
   pinImage = "images/pin.png"
 
   # Socail icons
