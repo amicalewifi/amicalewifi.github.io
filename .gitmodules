@@ -1,0 +1,3 @@
+[submodule "hugo-cohub"]
+	path = hugo-cohub
+	url = https://github.com/amicalewifi/hugo-cohub.git
