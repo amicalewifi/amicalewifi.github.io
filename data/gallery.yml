@@ -1,5 +1,5 @@
 ---
-title : "Take a look at Our Exibhition"
+title : "Amicale du WiFi<br><h2>Espace de Coworking à Fully</h2>"
 enable: true
 subtitle: >
         We are the world’s largest provider of flexible workspace solutions,
@@ -7,6 +7,6 @@ subtitle: >
 galleryImage: 
  - image: "images/gallery/gallery01.jpg"
  - image: "images/gallery/gallery02.jpg"
- - image: "images/gallery/gallery03.jpg"
- - image: "images/gallery/gallery04.jpg"
+ #- image: "images/gallery/gallery03.jpg"
+ #- image: "images/gallery/gallery04.jpg"
 ---
