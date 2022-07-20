@@ -63,7 +63,7 @@ title = 'Amicale du Wifi'
   #phone = "+(448) 833 5272 332"
 
   [params.map]
-  APIkey = "AIzaSyC9rV6yesIygoVKTD6QLf_iCa9eiIIHqZ0"
+  APIkey = "AIzaSyBT3aRTdVIIPKoLAeNT5N1yeFNtv5kQwCE"
   latitude = "46.1390744"
   longitude = "7.1133812"
   pinImage = "images/pin.png"
