@@ -17,7 +17,7 @@
           <i class="{{ .icon }}" aria-hidden="true"></i>
           <h3>{{ .name }}</h3>
           <p>
-              {{.description }}
+              {{.description | safeHTML}}
           </p>
         </div>
       </div>

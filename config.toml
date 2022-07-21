@@ -58,7 +58,6 @@ title = 'Amicale du Wifi'
   [params.address]
   address = "Rue de l'Église 34<br>CH-1926 Fully"
   email = "hello@amicalewifi.ch"
-  openingDesc = "Envoyez nous un message ou passez directement au bureau"
   #openingHours = "We are open from 7am — 7pm week days."
   #phone = "+(448) 833 5272 332"
 

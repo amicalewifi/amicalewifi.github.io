@@ -1,21 +1,21 @@
 ---
 enable: true
-title: "Des Pods sur mesures"
+title: "Pourquoi nous"
 subtitle: >
-          We enable people and businesses to work where they want, 
-          when they want and how they want.
+          Nous promouvons le coworking, un mode de travail flexible qui permet aux indépendants, collaborateurs à distance, et aux petites entreprises de tisser des liens dans la communauté locale.
+          Nous relocalisons de l'activité professionnelle au centre du village de Fully.
 services:
-  - name: "Grande surface"
+  - name: "Spacieux"
     description: >
-                4x plus d'espace que dans des espaces équivalents
-                Pods de 15m2 (comparé à 4m2)
+                Chaque coworker dispose d'une surface de bureau de 8m<sup>2</sup> en sus des parties communes 
     icon: "ti-view-grid"
-  - name: "Pour toutes les tailles et bugets"
+  - name: "Associatif"
     description: >
-                Pour indépendant, travailleur à distant, ou petite entreprise
+                Espace géré par une association à but non lucratif qui réinvestis la totalité des bénéfices éventuels dans l'espace
     icon: "ti-infinite"
   - name: "Personalisable"
     description: >
-                Un Pod est un un canevas de bois 100% personnalisable 
+                Les canevas délimitants l'espace sont personnalisables à 100% 
     icon: "ti-image"
+
 ---

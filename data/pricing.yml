@@ -1,7 +1,7 @@
 ---
 enable: true
 title: "Formules"
-subtitle: "Tous les canevas sont personnalisables à souhait"
+subtitle: "Nos formules se concentrent sur des accès à plein temps. N'hésitez pas à nous contactez si vous avez des besoins ne correspondant à auncune formule."
 itemPrices:
   - packcage: "Électron libre"
     features:
@@ -9,7 +9,7 @@ itemPrices:
       - feature: "Espace fixe de 8m<sup>2</sup> dans un canevas partagé"
       - feature: "10 heures de crédits pour la salle de réunion"
     description: >
-                Pour mener à bien son activité indépendante ou collaborer à distance
+                Pour mener à bien votre activité indépendante ou collaborer à distance
     price: 349.-
     frequency: "mois"
     badge: 
@@ -20,7 +20,7 @@ itemPrices:
       - feature: "Espace fixe de 16m<sup>2</sup> dans un canevas exclusif"
       - feature: "20 heures de crédits pour la salle de réunion"
     description: >
-                Un cocon pour tes collaborateurs
+                Un cocon pour vos collaborateurs
     price: 499.-
     frequency: "mois"
     buttonTarget: "/contact"
@@ -29,7 +29,7 @@ itemPrices:
     features:
       - feature: "Accès durant les heures de bureau"
     description: >
-                Une pièce idéale pour tes séances
+                Une pièce idéale pour vos séances
     price: 15.-
     frequency: "heure"
     badge:
