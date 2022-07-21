@@ -1,38 +1,21 @@
 ---
 enable: true
-title: "Why Choose us?"
+title: "Des Pods sur mesures"
 subtitle: >
           We enable people and businesses to work where they want, 
           when they want and how they want.
 services:
-  - name: "largest Network"
+  - name: "Grande surface"
     description: >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vel mollitia sit.
-                Dicta maxime ullam quos sapiente eveniet odio accusamus.
+                4x plus d'espace que dans des espaces équivalents
+                Pods de 15m2 (comparé à 4m2)
     icon: "ti-view-grid"
-  - name: "All Sizes And Budget"
+  - name: "Pour toutes les tailles et bugets"
     description: >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vel mollitia sit.
-                Dicta maxime ullam quos sapiente eveniet odio accusamus.
+                Pour indépendant, travailleur à distant, ou petite entreprise
     icon: "ti-infinite"
-  - name: "Dedicated Account Manager"
+  - name: "Personalisable"
     description: >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vel mollitia sit.
-                Dicta maxime ullam quos sapiente eveniet odio accusamus.
-    icon: "ti-help-alt"
-  - name: "Easy Payment"
-    description: >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vel mollitia sit.
-                Dicta maxime ullam quos sapiente eveniet odio accusamus.
-    icon: "ti-credit-card"
-  - name: "Dedicated Locker"
-    description: >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vel mollitia sit.
-                Dicta maxime ullam quos sapiente eveniet odio accusamus.
-    icon: "ti-lock"
-  - name: "Personalization"
-    description: >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vel mollitia sit.
-                Dicta maxime ullam quos sapiente eveniet odio accusamus.
+                Un Pod est un un canevas de bois 100% personnalisable 
     icon: "ti-image"
 ---

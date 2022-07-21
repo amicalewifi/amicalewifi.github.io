@@ -6,22 +6,19 @@ subtitle: >
            we've got an option for everyone
 buttonTarget: "contact"
 itemPrices:
-  - packcage: "Daily"
+  - packcage: "Bureau"
     description: >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Expedita pariatur quidem, impedit ipsa repellat sed!
-    price: 19
+                Accès à plein temps pour 1 mois dans Pod partagé (8m2 au sol), bureau fixe, 10h de salle de réunion
+    price: 350
     badge: 
-  - packcage: "Weekly"
+  - packcage: "Pod"
     description: >
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Libero exercitationem sed eius autem quisquam sapiente?
-    price: 79
-    badge: popular
+                Pod entiers (16m2) et personnalisable à souhait, Accès permanent pour 1 personne dans un Pod dédié (possibilité d'ajouter jusqu'à 3 personnes pour 150.- par personne), bureau fixe, 20h salle de réunion (pour le Pod)
+    price: 450
+#    badge: popular
   - packcage: "Monthly"
     description: >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, 
-                quas nesciunt vitae suscipit necessitatibus ea.
-    price: 99
+                Séances pour privés par tranche de 1 heure
+    price: 15
     badge:
 ---
