@@ -1,24 +1,37 @@
 ---
 enable: true
 title: "Formules"
-subtitle: >
-          Whether you're looking for a full-time workspace or are just visiting Melbourne,
-           we've got an option for everyone
-buttonTarget: "contact"
+subtitle: "Tous les canevas sont personnalisables à souhait"
 itemPrices:
-  - packcage: "Bureau"
+  - packcage: "Électron libre"
+    features:
+      - feature: "Accès 24/7"
+      - feature: "Espace fixe de 8m<sup>2</sup> dans un canevas partagé"
+      - feature: "10 heures de crédits pour la salle de réunion"
     description: >
-                Accès à plein temps pour 1 mois dans Pod partagé (8m2 au sol), bureau fixe, 10h de salle de réunion
-    price: 350
+                Pour mener à bien son activité indépendante ou collaborer à distance
+    price: 349.-
+    frequency: "mois"
     badge: 
-  - packcage: "Pod"
+    buttonTarget: "/contact"
+  - packcage: "Tribu"
+    features:
+      - feature: "Accès 24/7 pour 1 coworker<br/>CHF 150.- par coworker aditionnel"
+      - feature: "Espace fixe de 16m<sup>2</sup> dans un canevas exclusif"
+      - feature: "20 heures de crédits pour la salle de réunion"
     description: >
-                Pod entiers (16m2) et personnalisable à souhait, Accès permanent pour 1 personne dans un Pod dédié (possibilité d'ajouter jusqu'à 3 personnes pour 150.- par personne), bureau fixe, 20h salle de réunion (pour le Pod)
-    price: 450
+                Un cocon pour tes collaborateurs
+    price: 499.-
+    frequency: "mois"
+    buttonTarget: "/contact"
 #    badge: popular
-  - packcage: "Monthly"
+  - packcage: "Salle de conférence"
+    features:
+      - feature: "Accès durant les heures de bureau"
     description: >
-                Séances pour privés par tranche de 1 heure
-    price: 15
+                Une pièce idéale pour tes séances
+    price: 15.-
+    frequency: "heure"
     badge:
+    buttonTarget: "/contact"
 ---

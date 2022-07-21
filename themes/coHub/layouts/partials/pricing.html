@@ -18,14 +18,20 @@
             <span class="pricing-item-badge">Populaire</span>
             {{end}}
             <span class="price">
-                <sup>CHF </sup>{{.price}}
+                <sup><span style="font-size: 20px;">Fr. </span></sup>{{.price}}
+                <span style="font-size: 25px;">/{{.frequency}}</span>
             </span>
-            <h3>{{.packcage}}</h3>
-            <p>
-               {{.description}}
-            </p>
+            <div style="padding-bottom: 15px;">
+              <h3>{{.packcage}}</h3>
+              <p>
+               {{.description | safeHTML}}
+              </p>
+            </div>
+              {{ range .features}}
+              <p>{{.feature  | safeHTML}}</p>
+              {{end}}
           </div>
-          <a href="{{ .buttonTarget | absURL}}" class="btn btn-primary">Join Us</a>
+          <a href="{{ .buttonTarget | absURL}}" class="btn btn-primary">Contactez nous</a>
         </div>
       </div>
       {{end}}
