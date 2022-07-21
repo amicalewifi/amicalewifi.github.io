@@ -1,6 +1,7 @@
 ---
 enable: true
-title: "Organiser une visite"
+title: "Visitez l'espace"
+subtitle: "Pour vous permettre de découvrir l'espace, nous vous accueillons pour 1 jour sans engagement"
 buttonTarget: contact
 priceLink: "#pricing"
 ---
