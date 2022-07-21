@@ -7,15 +7,15 @@ title = 'Amicale du Wifi'
 [Menu]
   # Main Menu
   [[menu.Main]]
-  name = "Exibhition"
+  name = "Accueil"
   url= "#gallery"
   weight = 1
   [[menu.Main]]
-  name = "Feature"
+  name = "L'espace"
   url= "#service"
   weight = 1
   [[menu.Main]]
-  name = "About"
+  name = "A propos"
   url= "/about/"
   weight = 3
 #  [[menu.Main]]
@@ -23,13 +23,13 @@ title = 'Amicale du Wifi'
 #  url= "#blog"
 #  weight = 4
   [[menu.Main]]
-  name = "Pricing"
+  name = "Formules"
   url= "#pricing"
   weight = 5
-  [[menu.Main]]
-  name = "FAQ"
-  url= "#faq"
-  weight = 6
+#  [[menu.Main]]
+#  name = "FAQ"
+#  url= "#faq"
+#  weight = 6
   [[menu.Main]]
   name = "Contact"
   url= "/contact/"
