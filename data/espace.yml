@@ -1,0 +1,14 @@
+---
+enable: true
+title: "L'espace"
+features:
+  - feature: "Tout en un"
+    description: "Salle de conférence, Salle de pause, Canevas soit partagé, soit dédié (voir formules), Parc à vélo"
+    image: "images/gallery/gallery01.jpg"
+  - feature: "Canevas sur mesure"
+    description: "Customisable à souhait, Ressources disponibles (électricité, wifi 6, ethernet), surface au sol 16m2"
+    image: "images/gallery/gallery02.jpg"
+  - feature: "Restauration"
+    description: "Centre du village de Fully, Plenty restaurants et cafés, Restauration rapide au marché les mardis (l’espace est intégré dans l’espace protégé du marché)"
+    image: "images/gallery/gallery01.jpg"
+---

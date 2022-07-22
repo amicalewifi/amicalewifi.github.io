@@ -12,11 +12,11 @@ title = 'Amicale du WiFi'
   weight = 1
   [[menu.Main]]
   name = "L'espace"
-  url= "#"
+  url= "#espace"
   weight = 1
   [[menu.Main]]
   name = "A propos"
-  url= "/about/"
+  url= "#service"
   weight = 3
 #  [[menu.Main]]
 #  name = "Blog"
