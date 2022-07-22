@@ -3,12 +3,12 @@ enable: true
 title: "L'espace"
 features:
   - feature: "Tout en un"
-    description: "Salle de conférence, Salle de pause, Canevas soit partagé, soit dédié (voir formules), Parc à vélo"
-    image: "images/gallery/gallery01.jpg"
+    description: "L'espace intègre les composantes d'un espace de coworking. Une salle de conférence, une salle de repos, et des canevas qui font office de bureau. L'espace dispose d'un parc à vélo abrité."
+    image: "images/gallery/plan-espace.png"
   - feature: "Canevas sur mesure"
-    description: "Customisable à souhait, Ressources disponibles (électricité, wifi 6, ethernet), surface au sol 16m2"
-    image: "images/gallery/gallery02.jpg"
+    description: "Les canevas sont des cadres assurant l'enveloppe d'un bureau. Les canevas sont adaptable selon vos souhaits et disposent d'électricité et d'un accès internet filaire (Ethernet) et sans fil (WiFi 6). La surface au sol est de 16m<sup>2</sup>."
+    image: "images/gallery/canevas.jpeg"
   - feature: "Restauration"
-    description: "Centre du village de Fully, Plenty restaurants et cafés, Restauration rapide au marché les mardis (l’espace est intégré dans l’espace protégé du marché)"
-    image: "images/gallery/gallery01.jpg"
+    description: "L'espace est situé au centre de Vers-l'Eglise à Fully. Plusieurs cafés, restaurants et magasins d'alimentation sont accessibles à moins de 2 minute à pieds. L'espace est dans la zône du marché du mardi ou vous trouverez plusieurs options de restauration locale et rapide."
+    image: "images/gallery/restauration.jpeg"
 ---
