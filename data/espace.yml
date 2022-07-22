@@ -9,6 +9,10 @@ features:
     description: "Les canevas sont des cadres assurant l'enveloppe d'un bureau. Les canevas sont adaptable selon vos souhaits et disposent d'électricité et d'un accès internet filaire (Ethernet) et sans fil (WiFi 6). La surface au sol est de 16m<sup>2</sup>."
     image: "images/gallery/canevas.jpeg"
   - feature: "Restauration"
-    description: "L'espace est situé au centre de Vers-l'Eglise à Fully. Plusieurs cafés, restaurants et magasins d'alimentation sont accessibles à moins de 2 minute à pieds. L'espace est dans la zône du marché du mardi ou vous trouverez plusieurs options de restauration locale et rapide."
+    description: >
+                L'espace est situé au centre de Vers-l'Eglise à Fully. 
+                Plusieurs <a href="https://fullylocal.ch/?s=&category=376&location=636&lat=&lon=&runits=km&rad=0.1&a=true">options</a> de cafés, restaurants, épiceries et boulangeries sont accessibles à moins de 5 minute à pieds.
+                L'espace est situé dans la rue du <a href="https://www.fullytourisme.ch/fr/Evenements/Marche-hebdomadaire/">marché hebdomadaire</a> du mardi ou vous trouverez plusieurs truck food et take aways.
+                <p style="padding-top:18px;"><a href="https://www.fullytourisme.ch/fr/Evenements/Marche-hebdomadaire/"><img style="width:140px;" src="https://www.fullytourisme.ch/assets/addb94db/adf7c972.jpg"/></a></p>
     image: "images/gallery/restauration.jpeg"
 ---
