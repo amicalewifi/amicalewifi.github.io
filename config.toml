@@ -2,7 +2,7 @@ baseURL = 'https://amicalewifi.github.io'
 languageCode = 'fr-ch'
 paginate = 6
 theme= "coHub"
-title = 'Amicale du Wifi'
+title = 'Amicale du WiFi'
  
 [Menu]
   # Main Menu
@@ -12,7 +12,7 @@ title = 'Amicale du Wifi'
   weight = 1
   [[menu.Main]]
   name = "L'espace"
-  url= "#service"
+  url= "#"
   weight = 1
   [[menu.Main]]
   name = "A propos"
