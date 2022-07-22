@@ -2,7 +2,7 @@ baseURL = 'https://amicalewifi.github.io'
 languageCode = 'fr-ch'
 paginate = 6
 theme= "coHub"
-title = 'Amicale du WiFi'
+title = 'Amicale du WiFi - Espace de Coworking en Valais'
  
 [Menu]
   # Main Menu
