@@ -19,7 +19,9 @@
     <div class="row">
       {{ range $index, $element := .features }}
       <div class="col-lg-4 col-md-6">
+        {{if .image}}
         <img src="{{ .image | absURL }}" alt="images" style="width: 100%;">
+        {{end}}
         <h3>{{$element.feature | safeHTML}}</h3>
         <div class="story-content">
           {{$element.description | safeHTML}}

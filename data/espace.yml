@@ -2,17 +2,27 @@
 enable: true
 title: "L'espace"
 features:
-  - feature: "Tout en un"
-    description: "L'espace intègre les composantes d'un espace de coworking. Une salle de conférence, une salle de repos, et des canevas qui font office de bureau. L'espace dispose d'un parc à vélo abrité."
+  - feature: "Tout-en-un"
+    description: >
+                <p>
+                L'espace offre des espaces de travail individuels spacieux, lumineux, calmes, et personnalisables ; 
+                une salle de conférence et une cabine téléphonique équipées pour vos séances de travail ; 
+                une zone de pause équipé et un coin cuisine ; 
+                un accès internet wifi de dernière génération.
+                </p>
     image: "images/gallery/plan-espace.png"
-  - feature: "Canevas sur mesure"
-    description: "Les canevas sont des cadres assurant l'enveloppe d'un bureau. Les canevas sont adaptable selon vos souhaits et disposent d'électricité et d'un accès internet filaire (Ethernet) et sans fil (WiFi 6). La surface au sol est de 16m<sup>2</sup>."
-    image: "images/gallery/canevas.jpeg"
+  #- feature: "Canevas sur mesure"
+  #  description: "Les canevas sont des cadres assurant l'enveloppe d'un bureau. Les canevas sont adaptable selon vos souhaits et disposent d'électricité et d'un accès internet filaire (Ethernet) et sans fil (WiFi 6). La surface au sol est de 16m<sup>2</sup>."
+  #  image: "images/gallery/canevas.jpeg"
   - feature: "Restauration"
     description: >
-                L'espace est situé au centre de Vers-l'Eglise à Fully. 
-                Plusieurs <a href="https://fullylocal.ch/?s=&category=376&location=636&lat=&lon=&runits=km&rad=0.1&a=true">options</a> de cafés, restaurants, épiceries et boulangeries sont accessibles à moins de 5 minute à pieds.
-                L'espace est situé dans la rue du <a href="https://www.fullytourisme.ch/fr/Evenements/Marche-hebdomadaire/">marché hebdomadaire</a> du mardi ou vous trouverez plusieurs truck food et take aways.
-                <p style="padding-top:18px;"><a href="https://www.fullytourisme.ch/fr/Evenements/Marche-hebdomadaire/"><img style="width:140px;" src="https://www.fullytourisme.ch/assets/addb94db/adf7c972.jpg"/></a></p>
-    image: "images/gallery/restauration.jpeg"
+                <p>Situé au centre du village de Vers-l'Église à Fully, plusieurs options de <a href="https://fullylocal.ch/?s=&category=438&location=636&lat=&lon=&runits=km&rad=0.1&a=true">cafés</a>, <a href="">restaurants</a>, <a href="https://fullylocal.ch/?s=&category=376&location=636&lat=&lon=&runits=km&rad=0.1&a=true">épiceries</a> et <a href="https://fullylocal.ch/?s=&category=376&location=636&lat=&lon=&runits=km&rad=0.1&a=true">boulangeries</a> sont accessible à moins de 5 minutes à pied.</p>
+                <p >Tous les mardis la rue adjacente accueil le <a href="https://www.fullytourisme.ch/fr/Evenements/Marche-hebdomadaire/">marché hebdomadaire</a> et ses étales proposant de la nourriture à l’emporter.</p> <p><a href="https://www.fullytourisme.ch/fr/Evenements/Marche-hebdomadaire/"><img style="width:200px;" src="images/gallery/marche-mardi.jpeg"/></a></p>
+  #  image: "images/gallery/restauration.jpeg"
+  - feature: "Accès"
+    description: >
+                <p>
+                L'espace dispose d'un parc à vélo abrité et est accessible à <a href="https://www.google.ch/maps/dir/Parking+gratuit,+Fully/l'Amicale+du+Wifi,+Rue+de+l'Eglise+34,+1926+Fully/@46.1397296,7.1152954,17.73z/data=!4m14!4m13!1m5!1m1!1s0x478ec7242c63ed5d:0x7b677b6420283543!2m2!1d7.1179685!2d46.1410847!1m5!1m1!1s0x478ec971f9d54271:0xa79522b8f588716!2m2!1d7.1155699!2d46.1390707!3e2?hl=fr">350 mètres à pied</a> (3 minutes) d’un grand parc gratuit pour automobiles.
+                </p>
+    image: "images/gallery/itineraire.jpg"
 ---
