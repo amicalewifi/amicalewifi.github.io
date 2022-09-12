@@ -5,11 +5,11 @@ title: "Formules"
 itemPrices:
   - packcage: "Électron libre"
     features:
-  #    - feature: "Accès 24/7"
-      - feature: "Espace bureau personel de 8m<sup>2</sup>"
+      - feature: "Accès 24/7 pour 1 coworker<br/>CHF 200.- par coworker additionnel"
+      - feature: "Espace de bureau personel de 8m<sup>2</sup>"
       - feature: "10 heures de crédits pour la salle de conférence"
     description: >
-                Pour mener à bien votre activité indépendante ou collaborer à distance
+                Pour mener à bien votre activité indépendante, collaborer à distance, ou pour vos collaborateurs
     price: 329.-
     frequency: "mois"
     badge: 
@@ -27,7 +27,7 @@ itemPrices:
 #    badge: popular
   - packcage: "Salle de conférence"
     features:
-      - feature: "Accès durant les heures de bureau"
+      - feature: "Accès durant les heures de bureau pour 8 personnes"
     description: >
                 Une pièce idéale pour vos séances
     price: 15.-
