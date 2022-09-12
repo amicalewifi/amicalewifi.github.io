@@ -1,29 +1,29 @@
 ---
 enable: true
 title: "Formules"
-subtitle: "Nos formules se concentrent sur des accès à plein temps. N'hésitez pas à nous contactez si vous avez des besoins ne correspondant à auncune formule."
+#subtitle: "Nos formules se concentrent sur des accès à plein temps. N'hésitez pas à nous contactez si vous avez des besoins ne correspondant à auncune formule."
 itemPrices:
   - packcage: "Électron libre"
     features:
-      - feature: "Accès 24/7"
-      - feature: "Espace fixe de 8m<sup>2</sup> dans un canevas partagé"
-      - feature: "10 heures de crédits pour la salle de réunion"
+  #    - feature: "Accès 24/7"
+      - feature: "Espace bureau personel de 8m<sup>2</sup>"
+      - feature: "10 heures de crédits pour la salle de conférence"
     description: >
                 Pour mener à bien votre activité indépendante ou collaborer à distance
-    price: 349.-
+    price: 329.-
     frequency: "mois"
     badge: 
     buttonTarget: "/contact"
-  - packcage: "Tribu"
-    features:
-      - feature: "Accès 24/7 pour 1 coworker<br/>CHF 150.- par coworker aditionnel"
-      - feature: "Espace fixe de 16m<sup>2</sup> dans un canevas exclusif"
-      - feature: "20 heures de crédits pour la salle de réunion"
-    description: >
-                Un cocon pour vos collaborateurs
-    price: 499.-
-    frequency: "mois"
-    buttonTarget: "/contact"
+  #- packcage: "Tribu"
+  #  features:
+  #    - feature: "Accès 24/7 pour 1 coworker<br/>CHF 150.- par coworker aditionnel"
+  #    - feature: "Espace fixe de 16m<sup>2</sup> dans un canevas exclusif"
+  #    - feature: "20 heures de crédits pour la salle de réunion"
+  #  description: >
+  #              Un cocon pour vos collaborateurs
+  #  price: 499.-
+  #  frequency: "mois"
+  #  buttonTarget: "/contact"
 #    badge: popular
   - packcage: "Salle de conférence"
     features:
