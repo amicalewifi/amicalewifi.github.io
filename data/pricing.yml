@@ -8,6 +8,8 @@ itemPrices:
       - feature: "Accès 24/7 pour 1 coworker<br/>CHF 200.- par coworker additionnel"
       - feature: "Espace de bureau personel de 8m<sup>2</sup>"
       - feature: "10 heures de crédits pour la salle de conférence"
+      - feature: "Boîte aux lettres et domiciliation postale"
+      - feature: "Votre logo format A4 sur la devanture"
     description: >
                 Pour mener à bien votre activité indépendante, collaborer à distance, ou pour vos collaborateurs
     price: 329.-
