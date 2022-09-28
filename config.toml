@@ -63,8 +63,8 @@ title = "l'Amicale du Wifi - Espace associatif de coworking au centre de Fully e
 
   [params.map]
   APIkey = "AIzaSyBT3aRTdVIIPKoLAeNT5N1yeFNtv5kQwCE"
-  latitude = "46.1390726"
-  longitude = "7.1144756"
+  latitude = "46.1390235"
+  longitude = "7.1153841"
   pinImage = "images/pin.png"
 
   # Socail icons

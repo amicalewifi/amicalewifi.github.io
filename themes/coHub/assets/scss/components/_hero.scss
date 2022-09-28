@@ -31,34 +31,39 @@
     text-align: center;
     position: relative;
     z-index: 1;
+    padding: 20px;
+
+    background-color: #F5EE71;
+
 
     h1 {
-      color: $white;
-      margin-bottom: 15px;
-      font-size: 50px;
-      line-height: 70px;
+      color: $black;
+      margin-bottom: 12px;
+      font-size: 26px;
+      line-height: 40px;
+      font-weight: bold;
 
       @include tablet {
-        font-size: 40px;
+        font-size: 26px;
         line-height: 55px;
       }
       @include mobile {
-        font-size: 30px;
+        font-size: 26px;
         line-height: 45px;
       }
 
       @include mobile-xs {
-        font-size: 24px;
+        font-size: 20px;
         line-height: 40px;
       }
     }
 
     p {
-      color: $white;
-      font-size: 19px;
-      line-height: 32px;
+      color: $black;
+      font-size: 16px;
+      line-height: 20px;
       width: 83%;
-      margin: 0 auto 50px;
+      margin: 0 auto 0px;
 
       @include desktop {
         width: 100%;
