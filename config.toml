@@ -68,6 +68,9 @@ title = "l'Amicale du Wifi - Espace associatif de coworking au centre de Fully e
   pinImage = "images/pin.png"
 
   # Socail icons
+  [[params.social]]
+  icon = "ti-linkedin"
+  url = "https://www.linkedin.com/company/amicalewifi"
   #[[params.social]]
   #icon = "ti-facebook"
   #url = "https://www.facebook.com/"
