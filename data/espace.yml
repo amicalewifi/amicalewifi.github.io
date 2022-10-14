@@ -4,12 +4,12 @@ title: "L'espace"
 features:
   - feature: "Tout-en-un"
     description: >
+                <p>Situé au centre du village de Vers-l'Église, dans Fully, les locaux sont climatisés, spacieux, lumineux, calme et personnalisable.</p>
                 <p>
-                L'espace offre des bureaux de travail fixes, spacieux, climatisés, lumineux, calmes, et personnalisables ; 
-                Deux salles de conférence équipées pour vos séances de travail ; 
-                Une zone de pause équipée et un coin cuisine ; 
-                Un accès internet wifi de dernière génération.
-                </p>
+                Deux salles de réunion équipées<br/>
+                Coin cuisine<br/>
+                Zone de pause<br/>
+                Accès internet wifi de dernière génération</p>
     image: "images/gallery/plan-espace.png"
   #- feature: "Canevas sur mesure"
   #  description: "Les canevas sont des cadres assurant l'enveloppe d'un bureau. Les canevas sont adaptable selon vos souhaits et disposent d'électricité et d'un accès internet filaire (Ethernet) et sans fil (WiFi 6). La surface au sol est de 16m<sup>2</sup>."
