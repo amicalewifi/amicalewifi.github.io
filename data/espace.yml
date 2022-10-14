@@ -7,8 +7,8 @@ features:
                 <p>
                 L'espace offre des bureaux de travail fixes, spacieux, climatisés, lumineux, calmes, et personnalisables ; 
                 Deux salles de conférence équipées pour vos séances de travail ; 
-                une zone de pause équipé et un coin cuisine ; 
-                un accès internet wifi de dernière génération.
+                Une zone de pause équipée et un coin cuisine ; 
+                Un accès internet wifi de dernière génération.
                 </p>
     image: "images/gallery/plan-espace.png"
   #- feature: "Canevas sur mesure"
@@ -16,8 +16,16 @@ features:
   #  image: "images/gallery/canevas.jpeg"
   - feature: "Restauration"
     description: >
-                <p>Situé au centre du village de Vers-l'Église à Fully, plusieurs options de <a href="https://fullylocal.ch/?s=&category=438&location=636&lat=&lon=&runits=km&rad=0.1&a=true">cafés</a>, <a href="">restaurants</a>, <a href="https://fullylocal.ch/?s=&category=376&location=636&lat=&lon=&runits=km&rad=0.1&a=true">épiceries</a> et <a href="https://fullylocal.ch/?s=&category=376&location=636&lat=&lon=&runits=km&rad=0.1&a=true">boulangeries</a> sont accessible à moins de 5 minutes à pied.</p>
-                <p >Tous les mardis la rue adjacente accueil le <a href="https://www.fullytourisme.ch/fr/Evenements/Marche-hebdomadaire/">marché hebdomadaire</a> et ses étales proposant de la nourriture à l’emporter.</p> <p><a href="https://www.fullytourisme.ch/fr/Evenements/Marche-hebdomadaire/"><img style="width:200px;" src="images/gallery/marche-mardi.jpeg"/></a></p>
+                <p>De nombreux 
+                <a href="https://fullylocal.ch/?s=&category=438&location=636&lat=&lon=&runits=km&rad=0.1&a=true">cafés</a>, 
+                <a href="https://fullylocal.ch/?s=&category=452&location=636&lat=&lon=&runits=km&rad=0.1&a=true">restaurants</a>, 
+                <a href="https://fullylocal.ch/?s=&category=376&location=636&lat=&lon=&runits=km&rad=0.1&a=true">épiceries</a> et <a href="https://fullylocal.ch/?s=&category=376&location=636&lat=&lon=&runits=km&rad=0.1&a=true">boulangeries</a> 
+                vous attendent à moins de 5 minutes à pied. 
+                </p>
+                <p>Tous les mardis, la rue attenante accueille le 
+                <a href="https://www.fullytourisme.ch/fr/Evenements/Marche-hebdomadaire/">marché hebdomadaire</a> 
+                et ses étals offrant de la nourriture à emporter.</p>
+                <p><a href="https://www.fullytourisme.ch/fr/Evenements/Marche-hebdomadaire/"><img style="width:200px;" src="images/gallery/marche-mardi.jpeg"/></a></p>
   #  image: "images/gallery/restauration.jpeg"
   - feature: "Accès"
     description: >
