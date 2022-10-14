@@ -1,21 +1,21 @@
 ---
 enable: true
-title: "Pourquoi nous"
+title: "Un but idéal"
 subtitle: >
-          Nous promouvons le coworking, un mode de travail flexible qui permet aux indépendants, collaborateurs à distance, et aux petites entreprises de tisser des liens dans la communauté locale.
-          Nous relocalisons de l'activité professionnelle au centre du village de Fully.
+          <p>L'Amicale du Wifi est un projet de l'association Fully Coworking. Ses fondateurs vivent le télétravail et pratiquent le coworking depuis plus de 10 ans.
+            Avec cet espace, l'association veut contribuer à relocaliser l'activité professionnelle au centre du village, créer des liens dans la communauté locale et démocratiser le travail à distance de qualité.</p>    
 services:
   - name: "Spacieux"
     description: >
-                Chaque coworker dispose d'une surface de bureau personnelle d'environs 8m<sup>2</sup> en sus des parties communes.
+                Chaque coworker dispose d'une surface de bureau personnelle d'environs 8m<sup>2</sup> en sus des parties communes
     icon: "ti-view-grid"
   - name: "Associatif"
     description: >
-                Espace géré par une association à but non lucratif qui réinvestit la totalité des bénéfices éventuels dans l'espace. 
+          Espace géré par une association à but non lucratif qui réinvestit la totalité des bénéfices dans l'espace
     icon: "ti-infinite"
   - name: "Personalisable"
     description: >
-                Les espaces de bureau sont personalisable.
+          Les espaces de bureau sont personalisable
     icon: "ti-image"
 
 ---
