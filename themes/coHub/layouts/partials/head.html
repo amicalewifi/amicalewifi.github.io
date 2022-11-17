@@ -19,10 +19,9 @@
   
 
     {{"<!-- Favicon -->" | safeHTML}}
- <!--   <link rel="shortcut icon" href="{{"images/favicon.ico" | absURL}}" type="image/x-icon" />
-    <link rel="icon" href="{{"images/favicon.png" | absURL}}" type="image/x-icon" />
-  -->
-
+    <!--<link rel="shortcut icon" href="{{"images/favicon.ico" | absURL}}" type="image/x-icon" />-->
+    <link rel="icon" href="{{"images/logo.svg" | absURL}}" type="image/x-icon" />
+ 
     {{ with .Site.Params.googleAnalytics }}
     {{ "<!-- Global Site Tag (gtag.js) - Google Analytics -->" | safeHTML }}
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
