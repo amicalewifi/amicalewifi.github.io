@@ -54,7 +54,16 @@
       }
     }
     img {
-      width: 100px;
+      width: 250px;
+      height: 250px;
+      background: #f5ee71; 
+      padding: 20px;
+      @include desktop {
+        width: 80px;
+        height: 80px;
+        background: none;
+        padding: 0;
+      }
     }
   }
 
@@ -124,6 +133,12 @@
 
       .logo-white {
         display: none;
+      }
+      img {
+        width: 80px;
+        height: 80px;
+        background: none;
+        padding: 0;
       }
     }
 
