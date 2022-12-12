@@ -3,36 +3,52 @@ enable: true
 title: "Formules"
 #subtitle: "Nos formules se concentrent sur des accès à plein temps. N'hésitez pas à nous contactez si vous avez des besoins ne correspondant à auncune formule."
 itemPrices:
-  - packcage: "Électron libre"
+  - packcage: "Régulier 2"
     features:
-      - feature: "Accès 24/7 pour 1 coworker<br/>CHF 200.- par coworker additionnel"
-      - feature: "Espace de bureau personel de 8m<sup>2</sup>"
-      - feature: "10 heures de crédits pour la salle de conférence"
-      - feature: "Boîte aux lettres et domiciliation postale"
-      - feature: "Votre logo format A4 sur la devanture"
+      - feature: "Bureau partagé" 
+      - feature: "Accès 2 jours par semaine par badge RFID"
+      - feature: "Etagères personnelle et casier à clef"
+      - feature: "4 heures de crédits pour la salle de conférence"      
+      - feature: "Boîte aux lettres et domiciliation postale"      
     description: >
-                Pour mener à bien votre activité indépendante, collaborer à distance, ou pour vos collaborateurs
+    price: 199.-
+    frequency: "mois"
+    badge:
+    buttonTarget: "/contact"  
+
+  - packcage: "Régulier 3"
+    features:
+      - feature: "Bureau partagé" 
+      - feature: "Accès 3 jours par semaine par badge RFID"
+      - feature: "Etagères personnelle et casier à clef"
+      - feature: "6 heures de crédits pour la salle de conférence"      
+      - feature: "Boîte aux lettres et domiciliation postale"      
+    description: >
+    price: 249.-
+    frequency: "mois"
+    badge:
+    buttonTarget: "/contact"
+
+  - packcage: "Permanent"
+    features:
+      - feature: "Bureau dédié et personalisable"
+      - feature: "Accès 24/7 par badge RFID"
+      - feature: "Votre logo format A4 sur la devanture"
+      - feature: "Etagères personnelle et casier à clef"
+      - feature: "10 heures de crédits pour la salle de conférence"      
+      - feature: "Boîte aux lettres et domiciliation postale"      
+    description: >
     price: 329.-
     frequency: "mois"
-    badge: 
+    badge:
     buttonTarget: "/contact"
-  #- packcage: "Tribu"
-  #  features:
-  #    - feature: "Accès 24/7 pour 1 coworker<br/>CHF 150.- par coworker aditionnel"
-  #    - feature: "Espace fixe de 16m<sup>2</sup> dans un canevas exclusif"
-  #    - feature: "20 heures de crédits pour la salle de réunion"
-  #  description: >
-  #              Un cocon pour vos collaborateurs
-  #  price: 499.-
-  #  frequency: "mois"
-  #  buttonTarget: "/contact"
-#    badge: popular
+
   - packcage: "Salle de conférence"
     features:
-      - feature: "Accès durant les heures de bureau pour 8 personnes"
+      - feature: "Accès entre 8h et 20h pour 10 personnes par code QR"
     description: >
-                Une pièce idéale pour vos séances
-    price: 15.-
+                Une pièce idéale pour les séances de votre société ou association
+    price: 19.-
     frequency: "heure"
     badge:
     buttonTarget: "/contact"
