@@ -26,7 +26,7 @@ features:
                 <p>Tous les mardis, la rue attenante accueille le 
                 <a href="https://www.fullytourisme.ch/fr/Evenements/Marche-hebdomadaire/">marché hebdomadaire</a> 
                 et ses étals offrant de la nourriture à emporter.</p>
-                <p><a href="https://www.fullytourisme.ch/fr/Evenements/Marche-hebdomadaire/"><img style="width:200px;" src="images/gallery/marche-mardi.jpeg"/></a></p>
+                <p><a href="https://www.fullytourisme.ch/fr/Evenements/Marche-hebdomadaire/"><img style="width:200px;" src="images/gallery/marche-mardi.jpeg" alt="Marché hebdomadaire de Fully"/></a></p>
   #  image: "images/gallery/restauration.jpeg"
   - feature: "Accès"
     description: >
