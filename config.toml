@@ -74,18 +74,18 @@ title = "l'Amicale du Wifi - Espace associatif de coworking au centre de Fully e
   #[[params.social]]
   #icon = "ti-facebook"
   #url = "https://www.facebook.com/"
-  #weight = 1
-  #[[params.social]]
-  #icon = "ti-twitter-alt"
-  #url = "https://twitter.com/"
-  #weight = 2
+  weight = 1
+  [[params.social]]
+  icon = "ti-twitter-alt"
+  url = "https://twitter.com/AmicaleWifi"
+  #weight = 3
   #[[params.social]]
   #icon = "ti-dribbble"
   #url = "https://dribbble.com/"
   #weight = 3
-  #[[params.social]]
-  #icon = "ti-instagram"
-  #url = "https://www.instagram.com/"
-  #weight = 4
+  [[params.social]]
+  icon = "ti-instagram"
+  url = "https://www.instagram.com/amicalewifi"
+  weight = 2
   
   
