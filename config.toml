@@ -34,6 +34,10 @@ title = "l'Amicale du Wifi - Espace associatif de coworking au centre de Fully e
   name = "Contact"
   url= "/contact/"
   weight = 7
+  [[menu.Main]]
+  name = "Devenir membre"
+  url= "/membre/"
+  weight = 8
 
   # Sitemap Menu
 #  [[menu.sitemap]]

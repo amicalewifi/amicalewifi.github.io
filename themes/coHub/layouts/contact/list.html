@@ -14,6 +14,9 @@
         <div class="contact-form">
           <!--<h2>Informations de contact</h2>-->
           <form id="contact-form" class="row" action="{{ .Site.Params.formspreeURL }}" method="POST">
+            <div class="col-md-12">
+              <input type="hidden" id="type" name="type" value="prise de contact">
+            </div>
             <div class="col-md-6">
               <input type="text" class="form-control" id="exampleFormControlInput1" name="Name" placeholder="Votre Nom et Prénom">
             </div>
