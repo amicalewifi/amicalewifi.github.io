@@ -14,7 +14,7 @@
     {{$size := .size}}
     <div class="container">
       <div class="row">
-        <div class="col-lg-{{$size}}">
+        <div class="col-lg-3" style="margin-top: auto; margin-bottom: auto;">
             <div class="member-informashion">
               <div class="member-thume">
                 <img src="{{ .logo | absURL }}" alt="{{.logo}}">
@@ -22,7 +22,7 @@
             </div>
           </div>
         {{ range .investors}}
-         <div class="col-lg-{{$size}}">
+         <div class="col-lg-{{$size}}" style="margin-top: auto; margin-bottom: auto;">
             <div class="member-informashion">
               <div class="member-thume">
                 <a href="{{.link}}"><img src="{{ .image | absURL }}" alt="{{.name}}"></a>
