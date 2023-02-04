@@ -4,21 +4,21 @@ title: "Soutiens"
 subtitle: >
 category:
   - name: "Parrains"
-    logo: "tbd"
+    logo: "images/team/parrains-1200x1200.png"
     size: 4
     investors:
       - name: "Banque Raiffeisen Martigny et Région"
         link: "https://www.raiffeisen.ch/martigny-et-region/fr.html"
         image: "images/team/raiffeisen-1200x1200.png"
   - name: "Ondes d'or"
-    logo: "tbd"
+    logo: "images/team/ondes-or-1200x1200.png"
     size: 3
     investors:
       - name: "SOLTOP Energie AG"
         link: "https://www.soltop-energie.ch"
         image: "images/team/soltop-1200x1200.png"
   - name: "Ondes d'argent"
-    logo: "tbd"
+    logo: "images/team/ondes-argent-1200x1200.png"
     size: 2
     investors:
       - name: "Finance Assurance Suisse SA"
@@ -34,7 +34,7 @@ category:
         link: "https://www.meiertobler.ch"
         image: "images/team/meier-tobler-sa-1200x1200.png"
   - name: "Ondes de bronze"
-    logo: "tbd"
+    logo: "images/team/ondes-bronze-1200x1200.png"
     size: 2
     investors:
       - name: "EvoSun Sàrl"
