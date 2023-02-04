@@ -1,32 +1,46 @@
 ---
 enable: true
-title: "Our Angel Investors"
+title: "Soutiens"
 subtitle: >
-          Nulla quis lorem ut libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed, 
-          convallis at tellus. Nulla quis lorem ut libero malesuada feugiat.
-investor:
-  - name: "Spider Web"
-    post: "investor"
-    image: "images/team/design-team-01.jpg"
-  - name: "yrban"
-    post: "investor"
-    image: "images/team/design-team-02.jpg"
-  - name: "staticsoft"
-    post: "investor"
-    image: "images/team/design-team-03.jpg"
-  - name: "jackmaster"
-    post: "investor"
-    image: "images/team/marketing-team-01.jpg"
-  - name: "Franc Marketing"
-    post: "investor"
-    image: "images/team/marketing-team-05.jpg"
-  - name: "British Marketer"
-    post: "investor"
-    image: "images/team/marketing-team-03.jpg"
-  - name: "Spider Web"
-    post: "investor"
-    image: "images/team/design-team-01.jpg"
-  - name: "yrban"
-    post: "investor"
-    image: "images/team/design-team-02.jpg"
+category:
+  - name: "Parrains"
+    logo: "tbd"
+    size: 4
+    investors:
+      - name: "Banque Raiffeisen Martigny et Région"
+        link: "https://www.raiffeisen.ch/martigny-et-region/fr.html"
+        image: "images/team/raiffeisen-1200x1200.png"
+  - name: "Ondes d'or"
+    logo: "tbd"
+    size: 3
+    investors:
+      - name: "SOLTOP Energie AG"
+        link: "https://www.soltop-energie.ch"
+        image: "images/team/soltop-1200x1200.png"
+  - name: "Ondes d'argent"
+    logo: "tbd"
+    size: 2
+    investors:
+      - name: "Finance Assurance Suisse SA"
+        link: "https://www.finance-assurance.ch"
+        image: "images/team/finance-suisse-sa-1200x1200.png"
+      - name: "JM Rossa SA"
+        link: "https://jmrossa.ch"
+        image: "images/team/jm-rossa-sa-1200x1200.png"
+      - name: "Gex SA"
+        link: "https://www.gexsa.ch"
+        image: "images/team/gex-sa-1200x1200.png"
+      - name: "Meier Tobler SA"
+        link: "https://www.meiertobler.ch"
+        image: "images/team/meier-tobler-sa-1200x1200.png"
+  - name: "Ondes de bronze"
+    logo: "tbd"
+    size: 2
+    investors:
+      - name: "EvoSun Sàrl"
+        link: "https://evosun.ch"
+        image: "images/team/evosun-1200x1200.png"
+      #- name: "BRUGG AG"
+      #  link: "https://brugg.com"
+      #  image: "images/team/tbd.jpg"
 ---
