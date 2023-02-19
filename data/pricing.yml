@@ -3,6 +3,18 @@ enable: true
 title: "Formules"
 #subtitle: "Nos formules se concentrent sur des accès à plein temps. N'hésitez pas à nous contactez si vous avez des besoins ne correspondant à auncune formule."
 itemPrices:
+  - packcage: "Régulier 1"
+    features:
+      - feature: "Bureau partagé" 
+      - feature: "Accès 1 jours par semaine par badge RFID"
+      - feature: "Etagères personnelle et casier à clef"
+      - feature: "2 heures de crédits pour la salle de conférence"
+    description: >
+    price: 99.-
+    frequency: "mois"
+    badge:
+    buttonTarget: "/contact"  
+
   - packcage: "Régulier 2"
     features:
       - feature: "Bureau partagé" 
@@ -52,4 +64,16 @@ itemPrices:
     frequency: "heure"
     badge:
     buttonTarget: "/contact"
+
+  - packcage: "Domiciliation"
+    features:
+      - feature: "Adresse de représentation"
+      - feature: "Boîte aux lettres et domiciliation postale"
+      - feature: "Votre logo à l'entrée de l'espace"
+    description: >
+                Domiciliez votre entreprise au centre de Fully (1926).
+    price: 79.-
+    frequency: "mois"
+    badge:
+    buttonTarget: "/contact"    
 ---
