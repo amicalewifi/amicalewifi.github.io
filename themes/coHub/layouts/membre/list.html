@@ -1,4 +1,8 @@
 {{define "main"}}
+<script type="module">
+import {PaylinkButton} from "https://pay.raisenow.io/button.js"
+PaylinkButton.render('#rnw-paylink-button', {'solution-id': "nysvx", 'solution-type': "pay", language: "fr", size: "large", width: "fixed", 'color-scheme': "dark"})
+</script>
 <section class="contact-section">
   <div class="container">
     <div class="row">
@@ -9,39 +13,7 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-lg-8 mx-auto">
-        <div class="contact-form">
-          <!--<h2>Informations de contact</h2>-->
-          <form id="new-membre-form" class="row" action="{{ .Site.Params.formspreeURL }}" method="POST">
-            <div class="col-md-12">
-              <input type="hidden" id="type" name="type" value="nouveau membre">
-            </div>
-            <div class="col-md-12">
-              <input type="text" class="form-control" id="name" required="true" name="Name" placeholder="Votre Prénom et Nom  (p. ex. Ada Lovelace)">
-            </div>
-            <div class="col-md-12">
-              <input type="email" class="form-control" id="email" required="true" name="email" placeholder="Votre Email (p. ex. ada.lovelace@cam.ac.uk)">
-            </div>
-            <div class="col-md-12">
-              <input type="telephone" class="form-control" id="telephone" required="true" name="telephone" placeholder="Votre numéro de Téléphone (p. ex. +4107600000)">
-            </div>
-            <div class="col-md-6">
-              <input type="rue" class="form-control" id="rue" required="true" name="rue" placeholder="Votre Rue (p. ex. Rue des ondes)">
-            </div>
-            <div class="col-md-3">
-              <input type="code postal" class="form-control" id="code-postal" required="true" name="code-postal" placeholder="Code Postal">
-            </div>
-            <div class="col-md-3">
-              <input type="ville" class="form-control" id="ville" required="true" name="ville" placeholder="Ville">
-            </div>
-            <div class="col-lg-12">
-              <button type="submit" class="btn btn-primary" id="contact-form-button">Envoyer</button>
-            </div>
-            <p id="contact-form-status"></p>
-          </form>
-        </div>
-      </div>
+    
     </div>
   </div>
 </section>
