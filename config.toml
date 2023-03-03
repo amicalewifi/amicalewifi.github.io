@@ -44,10 +44,10 @@ title = "l'Amicale du Wifi - Espace associatif de coworking au centre de Fully e
 #  name = "Privacy Policy"
 #  url = "/privacy/"
 #  weight = 1
-#  [[menu.sitemap]]
-#  name = "Terms"
-#  url = "/terms/"
-#  weight = 2
+  [[menu.sitemap]]
+  name = "Conditions Générales"
+  url = "/terms/"
+  weight = 2
 
 [params]
   aboutPageURL = "blog"
