@@ -1,5 +1,9 @@
 {{ with .Site.Data.service}}
 {{ if .enable}}
+<script type="module">
+import {PaylinkButton} from "https://pay.raisenow.io/button.js"
+PaylinkButton.render('#rnw-paylink-button-new-member', {'solution-id': "nysvx", 'solution-type': "pay", language: "fr", size: "large", width: "fixed", 'color-scheme': "dark"})
+</script>
 <section class="service" id="service">
   <div class="container">
     <div class="row">
@@ -10,6 +14,19 @@
               {{.subtitle | safeHTML}}
           </p>
         </div>
+        <section style="text-align: center;">
+          <p>L'Amicale du Wifi est un projet de l'association Fully Coworking. Ses fondateurs vivent le télétravail et pratiquent le coworking depuis plus de 10 ans. Avec cet espace, l'association veut contribuer à relocaliser l'activité professionnelle au centre du village, créer des liens dans la communauté locale et démocratiser le travail à distance de qualité.
+          </p>
+          <h2>Devenez membre de l'association</h2>
+          <p>
+            Soutenez votre espace de coworking local en devenant membre de l'association à but non lucratif « Fully Coworking » pour 1 an. Vous serez invité à deux événements exclusifs par an et serez informés de l'évolution de l'association.
+          </p>
+          </br/>
+          <div id="rnw-paylink-button-new-member"></div>
+          </br/>
+          <p>Nous confirmerons votre nouveau statut par email.</p>
+        </section>
+
       </div>
       {{ range .services}}
       <div class="col-lg-4 col-md-6">

@@ -5,43 +5,44 @@ theme= "coHub"
 title = "l'Amicale du Wifi - Espace associatif de coworking au centre de Fully en Valais"
 
 [Menu]
-  # Main Menu
+  
   [[menu.Main]]
-  name = "Accueil"
-  url= "/"
+  name = "L'espace"
+  url= "#espace"
   weight = 1
-  #[[menu.Main]]
-  #name = "L'espace"
-  #url= "#espace"
-  #weight = 1
-  #[[menu.Main]]
-  #name = "A propos"
-  #url= "#service"
-  #weight = 3
+  [[menu.Main]]
+  name = "Formules"
+  url= "#pricing"
+  weight = 2
+  [[menu.Main]]
+  name = "Journée d'essai"
+  url= "/essai/"
+  weight = 3
+  [[menu.Main]]
+  name = "L'association"
+  url= "#service"
+  weight = 4
+  [[menu.Main]]
+  name = "Contact"
+  url= "/contact/"
+  weight = 5
+# Main Menu
+#[[menu.Main]]
+#name = "Accueil"
+#url= "/"
+#weight = 1  
 #  [[menu.Main]]
 #  name = "Blog"
 #  url= "#blog"
 #  weight = 4
-  [[menu.Main]]
-  name = "Formules"
-  url= "#pricing"
-  weight = 5
 #  [[menu.Main]]
 #  name = "FAQ"
 #  url= "#faq"
 #  weight = 6
-  [[menu.Main]]
-  name = "Devenir membre"
-  url= "/membre/"
-  weight = 8
-  [[menu.Main]]
-  name = "Organiser une journée d'essai"
-  url= "/essai/"
-  weight = 7
-  [[menu.Main]]
-  name = "Contact"
-  url= "/contact/"
-  weight = 9
+#  [[menu.Main]]
+#  name = "Devenir membre"
+#  url= "/membre/"
+#  weight = 8
 
   # Sitemap Menu
   [[menu.sitemap]]

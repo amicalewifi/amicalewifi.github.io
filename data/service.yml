@@ -2,8 +2,6 @@
 enable: true
 title: "Un but idéal"
 subtitle: >
-          <p>L'Amicale du Wifi est un projet de l'association Fully Coworking. Ses fondateurs vivent le télétravail et pratiquent le coworking depuis plus de 10 ans.
-            Avec cet espace, l'association veut contribuer à relocaliser l'activité professionnelle au centre du village, créer des liens dans la communauté locale et démocratiser le travail à distance de qualité.</p>    
 services:
   - name: "Spacieux"
     description: >
