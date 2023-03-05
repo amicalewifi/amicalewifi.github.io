@@ -10,14 +10,14 @@ title = "l'Amicale du Wifi - Espace associatif de coworking au centre de Fully e
   name = "Accueil"
   url= "/"
   weight = 1
-  [[menu.Main]]
-  name = "L'espace"
-  url= "#espace"
-  weight = 1
-  [[menu.Main]]
-  name = "A propos"
-  url= "#service"
-  weight = 3
+  #[[menu.Main]]
+  #name = "L'espace"
+  #url= "#espace"
+  #weight = 1
+  #[[menu.Main]]
+  #name = "A propos"
+  #url= "#service"
+  #weight = 3
 #  [[menu.Main]]
 #  name = "Blog"
 #  url= "#blog"
@@ -31,13 +31,17 @@ title = "l'Amicale du Wifi - Espace associatif de coworking au centre de Fully e
 #  url= "#faq"
 #  weight = 6
   [[menu.Main]]
-  name = "Contact"
-  url= "/contact/"
-  weight = 7
-  [[menu.Main]]
   name = "Devenir membre"
   url= "/membre/"
   weight = 8
+  [[menu.Main]]
+  name = "Organiser une journée d'essai"
+  url= "/essai/"
+  weight = 7
+  [[menu.Main]]
+  name = "Contact"
+  url= "/contact/"
+  weight = 9
 
   # Sitemap Menu
   [[menu.sitemap]]
