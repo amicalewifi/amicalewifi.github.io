@@ -5,7 +5,6 @@ theme= "coHub"
 title = "l'Amicale du Wifi - Espace associatif de coworking au centre de Fully en Valais"
 
 [Menu]
-  
   [[menu.Main]]
   name = "L'espace"
   url= "#espace"
