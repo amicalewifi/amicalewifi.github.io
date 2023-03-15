@@ -31,7 +31,7 @@
               <p>{{.feature  | safeHTML}}</p>
               {{end}}
           </div>
-          <a href="{{ .buttonTarget | absURL}}" class="btn btn-primary">Contactez nous</a>
+          <a href="{{ .buttonTarget | absURL}}" class="btn btn-primary">{{.buttonText}}</a>
         </div>
       </div>
       {{end}}

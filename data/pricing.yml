@@ -13,7 +13,8 @@ itemPrices:
     price: 99.-
     frequency: "mois"
     badge:
-    buttonTarget: "/contact"  
+    buttonTarget: "/contact" 
+    buttonText: "Contactez-nous" 
 
   - packcage: "Régulier 2"
     features:
@@ -27,6 +28,7 @@ itemPrices:
     frequency: "mois"
     badge:
     buttonTarget: "/contact"  
+    buttonText: "Contactez-nous"
 
   - packcage: "Régulier 3"
     features:
@@ -40,6 +42,7 @@ itemPrices:
     frequency: "mois"
     badge:
     buttonTarget: "/contact"
+    buttonText: "Contactez-nous"
 
   - packcage: "Permanent"
     features:
@@ -54,16 +57,18 @@ itemPrices:
     frequency: "mois"
     badge:
     buttonTarget: "/contact"
+    buttonText: "Contactez-nous"
 
   - packcage: "Salle de conférence"
     features:
-      - feature: "Accès entre 8h et 20h pour 10 personnes par code QR"
+      - feature: "Accès entre 8h et 21h pour 12 personnes par code QR"
     description: >
                 Une pièce idéale pour les séances de votre société ou association
     price: 19.-
     frequency: "heure"
     badge:
-    buttonTarget: "/contact"
+    buttonTarget: "/conference"
+    buttonText: "Réservez la salle"
 
   - packcage: "Domiciliation"
     features:
@@ -75,5 +80,6 @@ itemPrices:
     price: 79.-
     frequency: "mois"
     badge:
-    buttonTarget: "/contact"    
+    buttonTarget: "/contact" 
+    buttonText: "Contactez-nous"   
 ---
