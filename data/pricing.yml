@@ -14,7 +14,7 @@ itemPrices:
     price: 109.-
     frequency:
     badge:
-    buttonTarget: "https://amicalewifi.zahls.ch/fr/pay?pid=b6b5e134" 
+    buttonTarget: "https://amicalewifi.zahls.ch/fr/pay?tid=2e1994c7" 
     buttonText: "Achetez en ligne" 
 
   - packcage: "Pack 10 jours<br/><small>valide 3 mois</small>"
