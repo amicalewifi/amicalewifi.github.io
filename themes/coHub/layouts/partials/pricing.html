@@ -19,10 +19,12 @@
             {{end}}
             <span class="price">
                 <sup><span style="font-size: 20px;">Fr. </span></sup>{{.price}}
+                {{if .frequency}}
                 <span style="font-size: 25px;">/{{.frequency}}</span>
+                {{end}}
             </span>
             <div style="padding-bottom: 15px;">
-              <h3>{{.packcage}}</h3>
+              <h3>{{.packcage | safeHTML}}</h3>
               <p>
                {{.description | safeHTML}}
               </p>

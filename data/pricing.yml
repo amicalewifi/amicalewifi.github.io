@@ -3,46 +3,86 @@ enable: true
 title: "Formules"
 #subtitle: "Nos formules se concentrent sur des accès à plein temps. N'hésitez pas à nous contactez si vous avez des besoins ne correspondant à auncune formule."
 itemPrices:
-  - packcage: "Régulier 1"
+
+  - packcage: "Pack 5 jours<br/><small>valide 3 mois</small>"
     features:
       - feature: "Bureau partagé" 
-      - feature: "Accès 1 jours par semaine par badge RFID"
-      - feature: "Etagères personnelle et casier à clef"
+      - feature: "Accès 5 jours à choix selon disponibilités"
+      - feature: "Etagères personnelle"
       - feature: "2 heures de crédits pour la salle de conférence"
     description: >
-    price: 99.-
-    frequency: "mois"
+    price: 109.-
+    frequency:
     badge:
-    buttonTarget: "/contact" 
-    buttonText: "Contactez-nous" 
+    buttonTarget: "https://amicalewifi.zahls.ch/fr/pay?pid=b6b5e134" 
+    buttonText: "Achetez en ligne" 
 
-  - packcage: "Régulier 2"
+  - packcage: "Pack 10 jours<br/><small>valide 3 mois</small>"
     features:
       - feature: "Bureau partagé" 
-      - feature: "Accès 2 jours par semaine par badge RFID"
-      - feature: "Etagères personnelle et casier à clef"
-      - feature: "4 heures de crédits pour la salle de conférence"      
-      - feature: "Boîte aux lettres et domiciliation postale"      
+      - feature: "Accès 10 jours à choix selon disponibilités"
+      - feature: "Etagères personnelle"
+      - feature: "4 heures de crédits pour la salle de conférence"
     description: >
     price: 199.-
-    frequency: "mois"
+    frequency:
     badge:
-    buttonTarget: "/contact"  
-    buttonText: "Contactez-nous"
+    buttonTarget: "https://amicalewifi.zahls.ch/fr/pay?tid=23de2270" 
+    buttonText: "Achetez en ligne" 
 
-  - packcage: "Régulier 3"
+  - packcage: "Pack 15 jours<br/><small>valide 3 mois</small>"
     features:
       - feature: "Bureau partagé" 
-      - feature: "Accès 3 jours par semaine par badge RFID"
-      - feature: "Etagères personnelle et casier à clef"
-      - feature: "6 heures de crédits pour la salle de conférence"      
-      - feature: "Boîte aux lettres et domiciliation postale"      
+      - feature: "Accès 15 jours à choix selon disponibilités"
+      - feature: "Etagères personnelle"
+      - feature: "6 heures de crédits pour la salle de conférence"
     description: >
-    price: 249.-
-    frequency: "mois"
+    price: 279.-
+    frequency:
     badge:
-    buttonTarget: "/contact"
-    buttonText: "Contactez-nous"
+    buttonTarget: "https://amicalewifi.zahls.ch/fr/pay?tid=3b1f4779" 
+    buttonText: "Achetez en ligne" 
+
+  #- packcage: "Régulier 1"
+  #  features:
+  #    - feature: "Bureau partagé" 
+  #    - feature: "Accès 1 jours par semaine par badge RFID"
+  #    - feature: "Etagères personnelle et casier à clef"
+  #    - feature: "2 heures de crédits pour la salle de conférence"
+  #  description: >
+  #  price: 99.-
+  #  frequency: "mois"
+  #  badge:
+  #  buttonTarget: "/contact" 
+  #  buttonText: "Contactez-nous" 
+
+  #- packcage: "Régulier 2"
+  #  features:
+  #    - feature: "Bureau partagé" 
+  #    - feature: "Accès 2 jours par semaine par badge RFID"
+  #    - feature: "Etagères personnelle et casier à clef"
+  #    - feature: "4 heures de crédits pour la salle de conférence"      
+  #    - feature: "Boîte aux lettres et domiciliation postale"      
+  #  description: >
+  #  price: 199.-
+  #  frequency: "mois"
+  #  badge:
+  #  buttonTarget: "/contact"  
+  #  buttonText: "Contactez-nous"
+
+  #- packcage: "Régulier 3"
+  #  features:
+  #    - feature: "Bureau partagé" 
+  #    - feature: "Accès 3 jours par semaine par badge RFID"
+  #    - feature: "Etagères personnelle et casier à clef"
+  #    - feature: "6 heures de crédits pour la salle de conférence"      
+  #    - feature: "Boîte aux lettres et domiciliation postale"      
+  #  description: >
+  #  price: 249.-
+  #  frequency: "mois"
+  #  badge:
+  #  buttonTarget: "/contact"
+  #  buttonText: "Contactez-nous"
 
   - packcage: "Permanent"
     features:
