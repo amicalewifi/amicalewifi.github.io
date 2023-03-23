@@ -7,7 +7,7 @@ itemPrices:
   - packcage: "Pack 5 jours<br/><small>valide 3 mois</small>"
     features:
       - feature: "Bureau partagé" 
-      - feature: "Accès 5 jours à choix selon disponibilités"
+      - feature: "Accès 5 jours à choix de 7h à 19h"
       - feature: "Etagères personnelle"
       - feature: "2 heures de crédits pour la salle de conférence"
     description: >
@@ -20,7 +20,7 @@ itemPrices:
   - packcage: "Pack 10 jours<br/><small>valide 3 mois</small>"
     features:
       - feature: "Bureau partagé" 
-      - feature: "Accès 10 jours à choix selon disponibilités"
+      - feature: "Accès 10 jours à choix de 7h à 19h"
       - feature: "Etagères personnelle"
       - feature: "4 heures de crédits pour la salle de conférence"
     description: >
@@ -33,7 +33,7 @@ itemPrices:
   - packcage: "Pack 15 jours<br/><small>valide 3 mois</small>"
     features:
       - feature: "Bureau partagé" 
-      - feature: "Accès 15 jours à choix selon disponibilités"
+      - feature: "Accès 15 jours à choix de 7h à 19h"
       - feature: "Etagères personnelle"
       - feature: "6 heures de crédits pour la salle de conférence"
     description: >
