@@ -87,7 +87,7 @@ itemPrices:
   - packcage: "Permanent"
     features:
       - feature: "Bureau dédié et personalisable"
-      - feature: "Accès 24/7 par badge RFID"
+      - feature: "Accès 24/7"
       - feature: "Votre logo format A4 sur la devanture"
       - feature: "Etagères personnelle et casier à clef"
       - feature: "10 heures de crédits pour la salle de conférence"      
