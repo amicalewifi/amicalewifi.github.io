@@ -1,11 +1,14 @@
 ---
-title : "l'Amicale du WiFi"
-enable: false
-subtitle: >
-        L'espace associatif de coworking au centre de Fully
+title : "Les photos"
+enable: true
+#subtitle: >
+#        L'espace associatif de coworking au centre de Fully
 galleryImage: 
- - image: "images/gallery/gallery01.jpg"
- - image: "images/gallery/gallery02.jpg"
- #- image: "images/gallery/gallery03.jpg"
- #- image: "images/gallery/gallery04.jpg"
+ - image: "images/gallery/AW_Photos_6.jpg"
+ - image: "images/gallery/AW_Photos_3.jpg"
+ - image: "images/gallery/AW_Photos_7.jpg"
+ - image: "images/gallery/AW_Photos_9.jpg"
+ - image: "images/gallery/AW_Photos_1-2.jpg"
+ - image: "images/gallery/IMG_7015.jpg"
+# - image: "images/gallery/20230221_164048.jpg"
 ---
