@@ -64,4 +64,7 @@ category:
       - name: "CPJ Architecture SA"
         link: "https://cpjarchitecture.ch"
         image: "images/team/cpj-1200x1200.png"
+      - name: "E-Alps"
+        link: "https://e-alps.com"
+        image: "images/team/e-alps-1200x1200.png"
 ---
