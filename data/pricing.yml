@@ -4,7 +4,7 @@ title: "Formules"
 #subtitle: "Nos formules se concentrent sur des accès à plein temps. N'hésitez pas à nous contactez si vous avez des besoins ne correspondant à auncune formule."
 itemPrices:
 
-  - packcage: "Pack 5 jours<br/><small>valide 3 mois</small>"
+  - packcage: "Pack 5 jours<br/><small>valable 3 mois</small>"
     features:
       - feature: "Bureau partagé" 
       - feature: "Accès 5 jours à choix de 7h à 19h"
@@ -17,7 +17,7 @@ itemPrices:
     buttonTarget: "https://amicalewifi.zahls.ch/fr/pay?tid=2e1994c7" 
     buttonText: "Achetez en ligne" 
 
-  - packcage: "Pack 10 jours<br/><small>valide 3 mois</small>"
+  - packcage: "Pack 10 jours<br/><small>valable 3 mois</small>"
     features:
       - feature: "Bureau partagé" 
       - feature: "Accès 10 jours à choix de 7h à 19h"
@@ -30,7 +30,7 @@ itemPrices:
     buttonTarget: "https://amicalewifi.zahls.ch/fr/pay?tid=23de2270" 
     buttonText: "Achetez en ligne" 
 
-  - packcage: "Pack 15 jours<br/><small>valide 3 mois</small>"
+  - packcage: "Pack 15 jours<br/><small>valable 3 mois</small>"
     features:
       - feature: "Bureau partagé" 
       - feature: "Accès 15 jours à choix de 7h à 19h"
