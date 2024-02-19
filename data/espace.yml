@@ -4,14 +4,14 @@ title: "L'espace"
 features:
   - feature: "Tout-en-un"
     description: >
-                <p>Situé au centre du village de Vers-l'Église, dans Fully, les locaux sont climatisés, spacieux, lumineux, calme et personnalisable.</p>
+                <p>Situés au centre du village de Vers-l'Église, dans Fully, les locaux sont climatisés, spacieux, lumineux, calmes et personnalisables.</p>
                 <p>
                 Salle de conférence (max 12 personnes) équipée d'un <a href="https://www.samsung.com/ch_fr/business/smart-signage/digital-flipchart/interactive-display-wmr-series-lh65wmrwbgcxen/">flipchart numérique</a><br/>
                 Cabine de réunion (max 6 personnes) équipée d'un <a href="https://www.samsung.com/fr/tvs/qled-tv/q60b-75-inch-qled-4k-smart-tv-qe75q60bauxxc/">écran intelligent</a><br/>
                 Cafétéria<br/>
                 Zone de pause<br/>
                 Accès par badge 24/7<br/>
-                Internet wifi de dernière génération</p>
+                Internet wifi stable et puissant</p>
     image: "images/gallery/plan-espace.png"
   #- feature: "Canevas sur mesure"
   #  description: "Les canevas sont des cadres assurant l'enveloppe d'un bureau. Les canevas sont adaptable selon vos souhaits et disposent d'électricité et d'un accès internet filaire (Ethernet) et sans fil (WiFi 6). La surface au sol est de 16m<sup>2</sup>."
@@ -32,7 +32,7 @@ features:
   - feature: "Accès"
     description: >
                 <p>
-                L'espace dispose d'un parc à vélo abrité et est accessible à <a href="https://www.google.ch/maps/dir/Parking+gratuit,+Fully/l'Amicale+du+Wifi,+Rue+de+l'Eglise+34,+1926+Fully/@46.1397296,7.1152954,17.73z/data=!4m14!4m13!1m5!1m1!1s0x478ec7242c63ed5d:0x7b677b6420283543!2m2!1d7.1179685!2d46.1410847!1m5!1m1!1s0x478ec971f9d54271:0xa79522b8f588716!2m2!1d7.1155699!2d46.1390707!3e2?hl=fr">350 mètres à pied</a> (3 minutes) d’un grand parc gratuit pour automobiles.
+                L'espace dispose d'un parc à vélos abrité. Un grand parc gratuit pour automobiles se situe à <a href="https://www.google.ch/maps/dir/Parking+gratuit,+Fully/l'Amicale+du+Wifi,+Rue+de+l'Eglise+34,+1926+Fully/@46.1397296,7.1152954,17.73z/data=!4m14!4m13!1m5!1m1!1s0x478ec7242c63ed5d:0x7b677b6420283543!2m2!1d7.1179685!2d46.1410847!1m5!1m1!1s0x478ec971f9d54271:0xa79522b8f588716!2m2!1d7.1155699!2d46.1390707!3e2?hl=fr">350 mètres à pied</a> (3 minutes).
                 </p>
     image: "images/gallery/itineraire.jpg"
 ---
