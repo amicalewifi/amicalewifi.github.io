@@ -5,15 +5,15 @@ subtitle: >
 services:
   - name: "Spacieux"
     description: >
-                Chaque coworker dispose d'une surface de bureau personnelle d'environs 8m<sup>2</sup> en sus des parties communes
+                Chaque coworker dispose d'une surface de bureau personnelle d'environ 8m<sup>2</sup> en sus des parties communes
     icon: "ti-view-grid"
   - name: "Associatif"
     description: >
           Espace géré par une association à but non lucratif qui réinvestit la totalité des bénéfices dans l'espace
     icon: "ti-infinite"
-  - name: "Personalisable"
+  - name: "Personnalisable"
     description: >
-          Les espaces de bureau sont personalisable
+          Les espaces de bureau sont personnalisables
     icon: "ti-image"
 
 ---
