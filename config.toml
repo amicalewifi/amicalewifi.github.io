@@ -47,11 +47,11 @@ title = "l'Amicale du Wifi - Espace associatif de coworking au centre de Fully e
   [[menu.sitemap]]
   name = "Mentions Légales"
   url = "/privacy/"
-  weight = 1
+  weight = 100
   [[menu.sitemap]]
   name = "Conditions Générales"
   url = "/terms/"
-  weight = 2
+  weight = 101
 
 [params]
   aboutPageURL = "blog"
