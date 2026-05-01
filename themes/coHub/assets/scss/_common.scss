@@ -8,6 +8,12 @@ main a:not(.btn):not(.nav-link):not(.navbar-brand):not(.gallery-item a):not([cla
   text-decoration: none;
 }
 
+// Defer offscreen rendering work for below-the-fold sections.
+.gallery, .service, .pricing, .team, .contact {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 1000px;
+}
+
 .section {
   padding: 100px 0;
   @include desktop {

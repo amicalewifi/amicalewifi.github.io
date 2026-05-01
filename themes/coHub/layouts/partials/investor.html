@@ -17,7 +17,11 @@
         <div class="col-lg-2" style="margin-top: auto; margin-bottom: auto;">
             <div class="member-informashion">
               <div class="member-thume">
-                <img src="{{ .logo | absURL }}" alt="{{.logo}}" loading="lazy" decoding="async" width="1200" height="1200">
+                {{ $base := replaceRE "^images/team/(.+)\\.[^.]+$" "$1" .logo }}
+                <picture>
+                  <source type="image/webp" srcset="{{ printf "images/team/opt/%s-200.webp" $base | absURL }} 200w, {{ printf "images/team/opt/%s-400.webp" $base | absURL }} 400w" sizes="(max-width: 768px) 80px, 150px">
+                  <img src="{{ .logo | absURL }}" alt="logo" loading="lazy" decoding="async" width="1200" height="1200">
+                </picture>
               </div>
             </div>
           </div>
@@ -25,7 +29,13 @@
          <div class="col-lg-{{$size}}" style="margin-top: auto; margin-bottom: auto;">
             <div class="member-informashion">
               <div class="member-thume">
-                <a href="{{.link}}"><img src="{{ .image | absURL }}" alt="{{.name}}" loading="lazy" decoding="async" width="1200" height="1200"></a>
+                {{ $ibase := replaceRE "^images/team/(.+)\\.[^.]+$" "$1" .image }}
+                <a href="{{.link}}" target="_blank" rel="noopener" aria-label="{{.name}}">
+                  <picture>
+                    <source type="image/webp" srcset="{{ printf "images/team/opt/%s-200.webp" $ibase | absURL }} 200w, {{ printf "images/team/opt/%s-400.webp" $ibase | absURL }} 400w" sizes="(max-width: 768px) 100px, 200px">
+                    <img src="{{ .image | absURL }}" alt="{{.name}}" loading="lazy" decoding="async" width="1200" height="1200">
+                  </picture>
+                </a>
               </div>
             </div>
           </div>
