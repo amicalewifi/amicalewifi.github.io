@@ -22,29 +22,31 @@
         {{if .image}}
           {{ $img := .image }}
           {{ if eq $img "images/gallery/plan-espace.png" }}
-            <picture>
-              <source type="image/webp"
-                srcset="{{ "images/gallery/opt/plan-espace-800.webp" | absURL }} 800w,
-                        {{ "images/gallery/opt/plan-espace-1200.webp" | absURL }} 1200w"
-                sizes="(max-width: 768px) 100vw, 33vw">
-              <img src="{{ "images/gallery/opt/plan-espace-1200.png" | absURL }}"
-                   fetchpriority="high" decoding="async"
-                   width="1200" height="1604"
-                   style="width: 100%; height: auto; aspect-ratio: 1200 / 1604;"
-                   alt="Plan de l'espace">
-            </picture>
+            <div class="story-img-wrap" style="aspect-ratio: 1200 / 1604;">
+              <picture>
+                <source type="image/webp"
+                  srcset="{{ "images/gallery/opt/plan-espace-800.webp" | absURL }} 800w,
+                          {{ "images/gallery/opt/plan-espace-1200.webp" | absURL }} 1200w"
+                  sizes="(max-width: 768px) 100vw, 33vw">
+                <img src="{{ "images/gallery/opt/plan-espace-1200.png" | absURL }}"
+                     fetchpriority="high" decoding="async"
+                     width="1200" height="1604"
+                     alt="Plan de l'espace">
+              </picture>
+            </div>
           {{ else if eq $img "images/gallery/itineraire.jpg" }}
-            <picture>
-              <source type="image/webp"
-                srcset="{{ "images/gallery/opt/itineraire-700.webp" | absURL }} 700w,
-                        {{ "images/gallery/opt/itineraire-800.webp" | absURL }} 800w"
-                sizes="(max-width: 768px) 100vw, 33vw">
-              <img src="{{ "images/gallery/opt/itineraire-700.jpg" | absURL }}"
-                   loading="lazy" decoding="async"
-                   width="800" height="493"
-                   style="width: 100%; height: auto; aspect-ratio: 800 / 493;"
-                   alt="Itinéraire d'accès">
-            </picture>
+            <div class="story-img-wrap" style="aspect-ratio: 800 / 493;">
+              <picture>
+                <source type="image/webp"
+                  srcset="{{ "images/gallery/opt/itineraire-700.webp" | absURL }} 700w,
+                          {{ "images/gallery/opt/itineraire-800.webp" | absURL }} 800w"
+                  sizes="(max-width: 768px) 100vw, 33vw">
+                <img src="{{ "images/gallery/opt/itineraire-700.jpg" | absURL }}"
+                     loading="lazy" decoding="async"
+                     width="800" height="493"
+                     alt="Itinéraire d'accès">
+              </picture>
+            </div>
           {{ else }}
             <img src="{{ $img | absURL }}" loading="lazy" decoding="async" style="width: 100%;" alt="">
           {{ end }}
