@@ -117,7 +117,8 @@
         "name": "Formules de coworking",
         "itemListElement": [
           {{ $offers := slice }}
-          {{ range $i, $p := $site.Data.pricing.itemPrices }}
+          {{ range $sec := $site.Data.pricing.sections }}
+          {{ range $i, $p := $sec.itemPrices }}
             {{ if $p.price }}
               {{ $price := replace (string $p.price) ".-" "" }}
               {{ $price = replace $price "," "." }}
@@ -130,13 +131,14 @@
               {{ $offers = $offers | append (dict
                 "@type" "Offer"
                 "name" $offerName
+                "category" $sec.title
                 "price" $price
                 "priceCurrency" "CHF"
                 "url" $p.buttonTarget
-                "category" "Coworking pass"
                 "availability" "https://schema.org/InStock"
               ) }}
             {{ end }}
+          {{ end }}
           {{ end }}
           {{ range $i, $o := $offers }}{{ if $i }},{{ end }}{{ jsonify $o | safeJS }}{{ end }}
         ]
