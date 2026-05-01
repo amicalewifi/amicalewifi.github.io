@@ -2,26 +2,31 @@
 {{if .enable}}
 <section class="gallery" id="gallery">
   <div class="container">
-    <!--
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="section-title">
-          <h2>{{ .title | safeHTML }}</h2>
-          <p>
-            {{.subtitle}}
-          </p>
-        </div>
-      </div>
-    </div>
-    -->
-
     <div class="row">
       {{ range .galleryImage }}
+        {{ $orig := .image }}
+        {{ $base := replaceRE "^images/gallery/(.+)\\.[^.]+$" "$1" $orig }}
+        {{ $optBase := printf "images/gallery/opt/%s" $base }}
         <div class="col-md-6">
           <div class="gallery-item">
-            <a href="{{ .image | absURL }}" data-source="{{ .image | absURL }}"
-                title="Exibhition 01">
-                <img src="{{ .image | absURL }}" alt="gallery-images">
+            <a href="{{ printf "%s-1800.jpg" $optBase | absURL }}"
+               data-source="{{ printf "%s-1800.jpg" $optBase | absURL }}"
+               title="l'Amicale du Wifi">
+              <picture>
+                <source type="image/webp"
+                  srcset="{{ printf "%s-600.webp" $optBase | absURL }} 600w,
+                          {{ printf "%s-1200.webp" $optBase | absURL }} 1200w,
+                          {{ printf "%s-1800.webp" $optBase | absURL }} 1800w"
+                  sizes="(max-width: 768px) 100vw, 50vw">
+                <img src="{{ printf "%s-1200.jpg" $optBase | absURL }}"
+                     srcset="{{ printf "%s-600.jpg" $optBase | absURL }} 600w,
+                             {{ printf "%s-1200.jpg" $optBase | absURL }} 1200w,
+                             {{ printf "%s-1800.jpg" $optBase | absURL }} 1800w"
+                     sizes="(max-width: 768px) 100vw, 50vw"
+                     loading="lazy" decoding="async"
+                     width="1200" height="800"
+                     alt="l'Amicale du Wifi">
+              </picture>
             </a>
           </div>
         </div>

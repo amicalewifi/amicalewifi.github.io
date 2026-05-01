@@ -358,7 +358,7 @@ $(window).on("scroll", function () {
    });
  }
  
- if ($("#map").length > 0) {
-   google.maps.event.addDomListener(window, "load", initialize);
- }
+ // initialize() is invoked via the Maps script ?callback=initialize when lazy-loaded.
+ // Expose globally for the Maps API to find it.
+ window.initialize = initialize;
  

@@ -4,6 +4,19 @@ paginate = 6
 theme= "coHub"
 title = "l'Amicale du Wifi - Espace associatif de coworking au centre de Fully en Valais"
 
+[minify]
+  disableHTML = false
+  disableCSS = false
+  disableJS = false
+  disableJSON = false
+  disableSVG = false
+  disableXML = false
+  minifyOutput = true
+  [minify.tdewolff.html]
+    keepWhitespace = false
+    keepDocumentTags = true
+    keepEndTags = true
+
 [Menu]
   [[menu.Main]]
   name = "L'espace"

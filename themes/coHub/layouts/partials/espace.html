@@ -20,7 +20,31 @@
       {{ range $index, $element := .features }}
       <div class="col-lg-4 col-md-6">
         {{if .image}}
-        <img src="{{ .image | absURL }}" alt="images" style="width: 100%;">
+          {{ $img := .image }}
+          {{ if eq $img "images/gallery/plan-espace.png" }}
+            <picture>
+              <source type="image/webp"
+                srcset="{{ "images/gallery/opt/plan-espace-800.webp" | absURL }} 800w,
+                        {{ "images/gallery/opt/plan-espace-1200.webp" | absURL }} 1200w"
+                sizes="(max-width: 768px) 100vw, 33vw">
+              <img src="{{ "images/gallery/opt/plan-espace-1200.png" | absURL }}"
+                   loading="lazy" decoding="async"
+                   width="1200" height="1604"
+                   style="width: 100%; height: auto;"
+                   alt="Plan de l'espace">
+            </picture>
+          {{ else if eq $img "images/gallery/itineraire.jpg" }}
+            <picture>
+              <source type="image/webp" srcset="{{ "images/gallery/opt/itineraire-800.webp" | absURL }}">
+              <img src="{{ "images/gallery/opt/itineraire-800.jpg" | absURL }}"
+                   loading="lazy" decoding="async"
+                   width="800" height="493"
+                   style="width: 100%; height: auto;"
+                   alt="Itinéraire d'accès">
+            </picture>
+          {{ else }}
+            <img src="{{ $img | absURL }}" loading="lazy" decoding="async" style="width: 100%;" alt="">
+          {{ end }}
         {{end}}
         <h3>{{$element.feature | safeHTML}}</h3>
         <div class="story-content">

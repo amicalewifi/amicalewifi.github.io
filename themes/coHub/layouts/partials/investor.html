@@ -17,7 +17,7 @@
         <div class="col-lg-2" style="margin-top: auto; margin-bottom: auto;">
             <div class="member-informashion">
               <div class="member-thume">
-                <img src="{{ .logo | absURL }}" alt="{{.logo}}">
+                <img src="{{ .logo | absURL }}" alt="{{.logo}}" loading="lazy" decoding="async" width="1200" height="1200">
               </div>
             </div>
           </div>
@@ -25,7 +25,7 @@
          <div class="col-lg-{{$size}}" style="margin-top: auto; margin-bottom: auto;">
             <div class="member-informashion">
               <div class="member-thume">
-                <a href="{{.link}}"><img src="{{ .image | absURL }}" alt="{{.name}}"></a>
+                <a href="{{.link}}"><img src="{{ .image | absURL }}" alt="{{.name}}" loading="lazy" decoding="async" width="1200" height="1200"></a>
               </div>
             </div>
           </div>
