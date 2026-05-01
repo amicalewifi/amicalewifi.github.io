@@ -1,17 +1,38 @@
   <head>
     <meta charset="utf-8" />
-    <title>{{.Title}}</title>
-    <meta name="description" content="l'Amicale du Wifi | L'espace de coworking associatif au centre du village de Fully, Valais, Suisse">
-
-    {{ "<!--Meta For Index-->" | safeHTML }}
-    <meta name="robots" content="index, follow, Noimageindex">
+    {{ $siteTitle := .Site.Title }}
+    {{ $pageTitle := cond .IsHome $siteTitle (printf "%s · %s" .Title $siteTitle) }}
+    {{ $defaultDesc := "l'Amicale du Wifi est un espace de coworking associatif au centre du village de Fully en Valais (Suisse). Bureaux partagés, salle de conférence, cabine de réunion, accès 24/7 par badge, internet WiFi 6 stable. Géré par l'association à but non lucratif Fully Coworking." }}
+    {{ $desc := cond (isset .Params "description") (string (.Params.description | default $defaultDesc)) $defaultDesc }}
+    {{ $canonical := .Permalink }}
+    {{ $ogImage := absURL "images/hero/opt/header-1280.jpg" }}
+    <title>{{ $pageTitle }}</title>
+    <meta name="description" content="{{ $desc }}">
+    <link rel="canonical" href="{{ $canonical }}">
 
     {{ "<!--mobile responsive meta-->" | safeHTML }}
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1" />-->
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    {{ if eq (.Params.noindex | default false) true }}
+    <meta name="robots" content="noindex, nofollow">
+    {{ else }}
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    {{ end }}
+
+    {{ "<!-- Open Graph / Twitter -->" | safeHTML }}
+    <meta property="og:type" content="{{ cond .IsHome "website" "article" }}">
+    <meta property="og:locale" content="fr_CH">
+    <meta property="og:site_name" content="{{ $siteTitle }}">
+    <meta property="og:title" content="{{ $pageTitle }}">
+    <meta property="og:description" content="{{ $desc }}">
+    <meta property="og:url" content="{{ $canonical }}">
+    <meta property="og:image" content="{{ $ogImage }}">
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="847">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ $pageTitle }}">
+    <meta name="twitter:description" content="{{ $desc }}">
+    <meta name="twitter:image" content="{{ $ogImage }}">
+
     {{hugo.Generator}}
     {{ "<!-- Preconnect + async-load Google Fonts -->" | safeHTML }}
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
@@ -41,6 +62,8 @@
     <!--<link rel="shortcut icon" href="{{"images/favicon.ico" | absURL}}" type="image/x-icon" />-->
     <link rel="icon" href="{{"images/logo.svg" | absURL}}" type="image/x-icon" />
  
+    {{ partial "structured-data.html" . }}
+
     {{ with .Site.Params.googleAnalytics }}
     {{ "<!-- Google Analytics (deferred until after load) -->" | safeHTML }}
     <script>

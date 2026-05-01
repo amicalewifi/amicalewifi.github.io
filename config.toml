@@ -1,8 +1,15 @@
-baseURL = 'https://amicalewifi.github.io'
+baseURL = 'https://amicalewifi.ch'
 languageCode = 'fr-ch'
 paginate = 6
 theme= "coHub"
 title = "l'Amicale du Wifi - Espace associatif de coworking au centre de Fully en Valais"
+
+disableKinds = ["taxonomy", "term"]
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
 
 [minify]
   disableHTML = false
