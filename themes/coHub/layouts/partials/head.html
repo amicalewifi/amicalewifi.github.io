@@ -13,9 +13,28 @@
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
     {{hugo.Generator}}
-    {{ "<!-- Critical CSS -->" | safeHTML }}
+    {{ "<!-- Preconnect + async-load Google Fonts -->" | safeHTML }}
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style"
+          href="https://fonts.googleapis.com/css?family=Montserrat:300,400|Open+Sans:300,400,600,700&display=swap"
+          onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400|Open+Sans:300,400,600,700&display=swap"></noscript>
+
+    {{ "<!-- Critical CSS (inlined) -->" | safeHTML }}
     {{$style :=  resources.Get "scss/critical.scss" | resources.ToCSS | resources.Minify }}
-    <link href="{{ $style.Permalink }}" rel="stylesheet" />
+    <style>{{ $style.Content | safeCSS }}</style>
+
+    {{ if .IsHome }}
+    {{ "<!-- LCP image preload (responsive) -->" | safeHTML }}
+    <link rel="preload" as="image"
+          imagesrcset="{{ "images/hero/opt/header-768.webp" | absURL }} 768w,
+                       {{ "images/hero/opt/header-1280.webp" | absURL }} 1280w,
+                       {{ "images/hero/opt/header-1920.webp" | absURL }} 1920w"
+          imagesizes="100vw"
+          type="image/webp"
+          fetchpriority="high">
+    {{ end }}
   
 
     {{"<!-- Favicon -->" | safeHTML}}
@@ -23,15 +42,19 @@
     <link rel="icon" href="{{"images/logo.svg" | absURL}}" type="image/x-icon" />
  
     {{ with .Site.Params.googleAnalytics }}
-    {{ "<!-- Global Site Tag (gtag.js) - Google Analytics -->" | safeHTML }}
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+    {{ "<!-- Google Analytics (deferred until after load) -->" | safeHTML }}
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-  
-      gtag('config', '{{ . }}');
-      
+      window.addEventListener('load', function(){
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id={{ . }}';
+        document.head.appendChild(s);
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        window.gtag = gtag;
+        gtag('js', new Date());
+        gtag('config', '{{ . }}');
+      });
     </script>
     {{ end }}
 
