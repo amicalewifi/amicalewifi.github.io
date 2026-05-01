@@ -1,19 +1,18 @@
-window.addEventListener("DOMContentLoaded", function() {    
+window.addEventListener("DOMContentLoaded", function() {
   var form = document.getElementById("contact-form");
+  if (!form) return;
   var button = document.getElementById("contact-form-button");
   var status = document.getElementById("contact-form-status");
 
   function success() {
     form.reset();
-    button.style = "display: none ";
-    status.innerHTML = "Votre message a bien été envoyé. Nous vous contacterons sous peu.";
+    if (button) button.style = "display: none ";
+    if (status) status.innerHTML = "Votre message a bien été envoyé. Nous vous contacterons sous peu.";
   }
 
   function error() {
-    status.innerHTML = "Désolé votre message ne peut pas être envoyé.";
+    if (status) status.innerHTML = "Désolé votre message ne peut pas être envoyé.";
   }
-
-  // handle the form submission event
 
   form.addEventListener("submit", function(ev) {
     ev.preventDefault();
