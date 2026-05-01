@@ -1,8 +1,15 @@
 .story {
   position: relative;
-  display: flex;
   padding-bottom: 10px;
-  align-items: center;
+
+  // Reserve image box space upfront to avoid CLS while the image decodes.
+  .story-img-wrap {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow: hidden;
+    border-radius: 6px;
+    picture, img { display: block; width: 100%; height: 100%; object-fit: cover; }
+  }
   &-content {
     @include tablet {
       text-align: center;
