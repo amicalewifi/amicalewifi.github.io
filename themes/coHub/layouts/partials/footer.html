@@ -65,6 +65,29 @@
 {{ $script := resources.Get "js/script.js" | minify}}
 <script defer src="{{ $script.Permalink}}"></script>
 
+{{ "<!-- Lazy-load RaiseNow PaylinkButtons when their containers scroll into view -->" | safeHTML }}
+<script>
+(function(){
+  var targets = [
+    {id: 'rnw-paylink-button-new-member', module: 'https://pay.raisenow.io/button.js',    opts: {'solution-id': 'nysvx', 'solution-type': 'pay',    language: 'fr', size: 'large', width: 'fixed', 'color-scheme': 'dark'}},
+    {id: 'rnw-paylink-button',            module: 'https://donate.raisenow.io/button.js', opts: {'solution-id': 'njymw', 'solution-type': 'donate', language: 'fr', size: 'large', width: 'fixed', 'color-scheme': 'dark'}}
+  ];
+  function render(target){
+    import(target.module).then(function(m){ m.PaylinkButton.render('#'+target.id, target.opts); });
+  }
+  function observe(target){
+    var el = document.getElementById(target.id);
+    if (!el) return;
+    if (!('IntersectionObserver' in window)) { render(target); return; }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting) { render(target); io.disconnect(); }});
+    }, {rootMargin: '300px'});
+    io.observe(el);
+  }
+  targets.forEach(observe);
+})();
+</script>
+
 {{ "<!-- Lazy-load Google Maps when contact section is near viewport -->" | safeHTML }}
 <script>
 (function(){

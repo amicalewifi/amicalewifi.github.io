@@ -1,9 +1,5 @@
 {{ with .Site.Data.service}}
 {{ if .enable}}
-<script type="module">
-import {PaylinkButton} from "https://pay.raisenow.io/button.js"
-PaylinkButton.render('#rnw-paylink-button-new-member', {'solution-id': "nysvx", 'solution-type': "pay", language: "fr", size: "large", width: "fixed", 'color-scheme': "dark"})
-</script>
 <section class="service" id="service">
   <div class="container">
     <div class="row">
