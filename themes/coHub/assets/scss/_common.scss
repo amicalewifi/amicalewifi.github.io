@@ -1,3 +1,13 @@
+// Accessibility: body content links must be distinguishable beyond color (WCAG 1.4.1).
+// Underline links inside text content; nav/buttons opt out via class-targeted overrides below.
+main a:not(.btn):not(.nav-link):not(.navbar-brand):not(.gallery-item a):not([class*="paylink"]) {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.gallery-item a, .footer-icon a, .footer-logo a, .pricing a.btn, .cta a.btn {
+  text-decoration: none;
+}
+
 .section {
   padding: 100px 0;
   @include desktop {
