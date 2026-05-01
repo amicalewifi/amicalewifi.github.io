@@ -49,12 +49,11 @@
     <style>{{ $style.Content | safeCSS }}</style>
 
     {{ if .IsHome }}
-    {{ "<!-- LCP image preload (responsive) -->" | safeHTML }}
+    {{ "<!-- LCP image preload (mobile LCP is the floor-plan in the espace section) -->" | safeHTML }}
     <link rel="preload" as="image"
-          imagesrcset="{{ "images/hero/opt/header-768.webp" | absURL }} 768w,
-                       {{ "images/hero/opt/header-1280.webp" | absURL }} 1280w,
-                       {{ "images/hero/opt/header-1920.webp" | absURL }} 1920w"
-          imagesizes="100vw"
+          imagesrcset="{{ "images/gallery/opt/plan-espace-800.webp" | absURL }} 800w,
+                       {{ "images/gallery/opt/plan-espace-1200.webp" | absURL }} 1200w"
+          imagesizes="(max-width: 768px) 100vw, 33vw"
           type="image/webp"
           fetchpriority="high">
     {{ end }}

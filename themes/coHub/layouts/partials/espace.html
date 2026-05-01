@@ -28,18 +28,21 @@
                         {{ "images/gallery/opt/plan-espace-1200.webp" | absURL }} 1200w"
                 sizes="(max-width: 768px) 100vw, 33vw">
               <img src="{{ "images/gallery/opt/plan-espace-1200.png" | absURL }}"
-                   loading="lazy" decoding="async"
+                   fetchpriority="high" decoding="async"
                    width="1200" height="1604"
-                   style="width: 100%; height: auto;"
+                   style="width: 100%; height: auto; aspect-ratio: 1200 / 1604;"
                    alt="Plan de l'espace">
             </picture>
           {{ else if eq $img "images/gallery/itineraire.jpg" }}
             <picture>
-              <source type="image/webp" srcset="{{ "images/gallery/opt/itineraire-800.webp" | absURL }}">
-              <img src="{{ "images/gallery/opt/itineraire-800.jpg" | absURL }}"
+              <source type="image/webp"
+                srcset="{{ "images/gallery/opt/itineraire-700.webp" | absURL }} 700w,
+                        {{ "images/gallery/opt/itineraire-800.webp" | absURL }} 800w"
+                sizes="(max-width: 768px) 100vw, 33vw">
+              <img src="{{ "images/gallery/opt/itineraire-700.jpg" | absURL }}"
                    loading="lazy" decoding="async"
                    width="800" height="493"
-                   style="width: 100%; height: auto;"
+                   style="width: 100%; height: auto; aspect-ratio: 800 / 493;"
                    alt="Itinéraire d'accès">
             </picture>
           {{ else }}
