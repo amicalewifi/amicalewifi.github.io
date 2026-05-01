@@ -67,19 +67,29 @@
     {{ partial "structured-data.html" . }}
 
     {{ with .Site.Params.googleAnalytics }}
-    {{ "<!-- Google Analytics (deferred until after load) -->" | safeHTML }}
+    {{ "<!-- Google Analytics: load only after first user interaction or 8s idle -->" | safeHTML }}
     <script>
-      window.addEventListener('load', function(){
-        var s = document.createElement('script');
-        s.async = true;
-        s.src = 'https://www.googletagmanager.com/gtag/js?id={{ . }}';
-        document.head.appendChild(s);
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        window.gtag = gtag;
-        gtag('js', new Date());
-        gtag('config', '{{ . }}');
-      });
+      (function(){
+        var loaded = false;
+        function loadGA(){
+          if (loaded) return; loaded = true;
+          var s = document.createElement('script');
+          s.async = true;
+          s.src = 'https://www.googletagmanager.com/gtag/js?id={{ . }}';
+          document.head.appendChild(s);
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          window.gtag = gtag;
+          gtag('js', new Date());
+          gtag('config', '{{ . }}');
+        }
+        var events = ['pointerdown','keydown','scroll','touchstart'];
+        function trigger(){ events.forEach(function(e){ window.removeEventListener(e, trigger, {passive:true}); }); loadGA(); }
+        events.forEach(function(e){ window.addEventListener(e, trigger, {passive:true, once:true}); });
+        // Fallback: if no interaction, load during idle time after 8s.
+        var fallback = function(){ ('requestIdleCallback' in window ? requestIdleCallback : setTimeout)(loadGA, 1); };
+        setTimeout(fallback, 8000);
+      })();
     </script>
     {{ end }}
 
