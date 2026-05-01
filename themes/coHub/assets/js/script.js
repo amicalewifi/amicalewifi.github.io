@@ -142,7 +142,7 @@ $(document).ready(function () {
           item.el.attr("title") +
           ' &middot; <a class="image-source-link" href="' +
           item.el.attr("data-source") +
-          '" target="_blank">image source</a>'
+          '" target="_blank" rel="noopener noreferrer">image source</a>'
         );
       },
     },
@@ -177,7 +177,6 @@ $(window).on("scroll", function () {
    var map;
    var lat = $("#map").data("lat");
    var long = $("#map").data("long");
-   console.log(lat, long);
    var mapCenter = new google.maps.LatLng(lat, long);
    var style = [
     {
