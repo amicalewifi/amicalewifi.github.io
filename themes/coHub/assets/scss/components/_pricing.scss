@@ -6,6 +6,40 @@
   @include mobile-xs {
     padding: 30px 0;
   }
+
+  &-section {
+    margin-bottom: 60px;
+    @include mobile {
+      margin-bottom: 30px;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &-section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    @include mobile {
+      margin-bottom: 25px;
+    }
+    h3 {
+      font-size: 28px;
+      font-weight: 600;
+      color: $text-color-dark;
+      margin-bottom: 8px;
+      @include mobile {
+        font-size: 22px;
+      }
+    }
+    p {
+      font-size: 14px;
+      color: $text-color;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+
   &-wraper {
     transition: all 0.3s ease-in-out;
     .pricing-item {

@@ -1,125 +1,100 @@
 ---
 enable: true
 title: "Formules"
-#subtitle: "Nos formules se concentrent sur des accès à plein temps. N'hésitez pas à nous contactez si vous avez des besoins ne correspondant à auncune formule."
-itemPrices:
+#subtitle: "Nos formules se concentrent sur des accès à plein temps. N'hésitez pas à nous contactez si vous avez des besoins ne correspondant à aucune formule."
 
-  - packcage: "Pack 5 jours<br/><small>valable 3 mois</small>"
-    features:
-      - feature: "Bureau partagé" 
-      - feature: "Accès 5 jours à choix de 7h à 19h"
-      - feature: "Etagères personnelle"
-      - feature: "2 heures de crédits pour la salle de conférence"
-    description: >
-    price: 109.-
-    frequency:
-    badge:
-    buttonTarget: "https://amicalewifi.zahls.ch/fr/pay?tid=2e1994c7" 
-    buttonText: "Achetez en ligne" 
+sections:
 
-  - packcage: "Pack 10 jours<br/><small>valable 3 mois</small>"
-    features:
-      - feature: "Bureau partagé" 
-      - feature: "Accès 10 jours à choix de 7h à 19h"
-      - feature: "Etagères personnelle"
-      - feature: "4 heures de crédits pour la salle de conférence"
-    description: >
-    price: 199.-
-    frequency:
-    badge:
-    buttonTarget: "https://amicalewifi.zahls.ch/fr/pay?tid=23de2270" 
-    buttonText: "Achetez en ligne" 
+  - title: "Poste de travail"
+    subtitle: >
+                Accès aux bureaux partagés et à l'espace de coworking.
+    itemPrices:
 
-  - packcage: "Pack 15 jours<br/><small>valable 3 mois</small>"
-    features:
-      - feature: "Bureau partagé" 
-      - feature: "Accès 15 jours à choix de 7h à 19h"
-      - feature: "Etagères personnelle"
-      - feature: "6 heures de crédits pour la salle de conférence"
-    description: >
-    price: 279.-
-    frequency:
-    badge:
-    buttonTarget: "https://amicalewifi.zahls.ch/fr/pay?tid=3b1f4779" 
-    buttonText: "Achetez en ligne" 
+      - packcage: "Pack 5 jours<br/><small>valable 3 mois</small>"
+        features:
+          - feature: "Bureau partagé"
+          - feature: "Accès 5 jours à choix de 7h à 19h"
+          - feature: "Etagères personnelle"
+          - feature: "2 heures de crédits pour la salle de conférence"
+        description: >
+        price: 109.-
+        frequency:
+        badge:
+        buttonTarget: "https://amicalewifi.zahls.ch/fr/pay?tid=2e1994c7"
+        buttonText: "Achetez en ligne"
 
-  #- packcage: "Régulier 1"
-  #  features:
-  #    - feature: "Bureau partagé" 
-  #    - feature: "Accès 1 jours par semaine par badge RFID"
-  #    - feature: "Etagères personnelle et casier à clef"
-  #    - feature: "2 heures de crédits pour la salle de conférence"
-  #  description: >
-  #  price: 99.-
-  #  frequency: "mois"
-  #  badge:
-  #  buttonTarget: "/contact" 
-  #  buttonText: "Contactez-nous" 
+      - packcage: "Pack 10 jours<br/><small>valable 3 mois</small>"
+        features:
+          - feature: "Bureau partagé"
+          - feature: "Accès 10 jours à choix de 7h à 19h"
+          - feature: "Etagères personnelle"
+          - feature: "4 heures de crédits pour la salle de conférence"
+        description: >
+        price: 199.-
+        frequency:
+        badge:
+        buttonTarget: "https://amicalewifi.zahls.ch/fr/pay?tid=23de2270"
+        buttonText: "Achetez en ligne"
 
-  #- packcage: "Régulier 2"
-  #  features:
-  #    - feature: "Bureau partagé" 
-  #    - feature: "Accès 2 jours par semaine par badge RFID"
-  #    - feature: "Etagères personnelle et casier à clef"
-  #    - feature: "4 heures de crédits pour la salle de conférence"      
-  #    - feature: "Boîte aux lettres et domiciliation postale"      
-  #  description: >
-  #  price: 199.-
-  #  frequency: "mois"
-  #  badge:
-  #  buttonTarget: "/contact"  
-  #  buttonText: "Contactez-nous"
+      - packcage: "Pack 15 jours<br/><small>valable 3 mois</small>"
+        features:
+          - feature: "Bureau partagé"
+          - feature: "Accès 15 jours à choix de 7h à 19h"
+          - feature: "Etagères personnelle"
+          - feature: "6 heures de crédits pour la salle de conférence"
+        description: >
+        price: 279.-
+        frequency:
+        badge:
+        buttonTarget: "https://amicalewifi.zahls.ch/fr/pay?tid=3b1f4779"
+        buttonText: "Achetez en ligne"
 
-  #- packcage: "Régulier 3"
-  #  features:
-  #    - feature: "Bureau partagé" 
-  #    - feature: "Accès 3 jours par semaine par badge RFID"
-  #    - feature: "Etagères personnelle et casier à clef"
-  #    - feature: "6 heures de crédits pour la salle de conférence"      
-  #    - feature: "Boîte aux lettres et domiciliation postale"      
-  #  description: >
-  #  price: 249.-
-  #  frequency: "mois"
-  #  badge:
-  #  buttonTarget: "/contact"
-  #  buttonText: "Contactez-nous"
+      - packcage: "Permanent"
+        features:
+          - feature: "Bureau dédié et personnalisable"
+          - feature: "Accès 24/7"
+          - feature: "Votre logo format A4 sur la devanture"
+          - feature: "Etagères personnelle et casier à clef"
+          - feature: "10 heures de crédits pour la salle de conférence"
+          - feature: "Boîte aux lettres et domiciliation postale"
+        description: >
+        price: 329.-
+        frequency: "mois"
+        badge:
+        buttonTarget: "/contact"
+        buttonText: "Contactez-nous"
 
-  - packcage: "Permanent"
-    features:
-      - feature: "Bureau dédié et personnalisable"
-      - feature: "Accès 24/7"
-      - feature: "Votre logo format A4 sur la devanture"
-      - feature: "Etagères personnelle et casier à clef"
-      - feature: "10 heures de crédits pour la salle de conférence"      
-      - feature: "Boîte aux lettres et domiciliation postale"      
-    description: >
-    price: 329.-
-    frequency: "mois"
-    badge:
-    buttonTarget: "/contact"
-    buttonText: "Contactez-nous"
+  - title: "Salle de conférence"
+    subtitle: >
+                Une pièce idéale pour les séances de votre société ou association.
+    itemPrices:
 
-  - packcage: "Salle de conférence"
-    features:
-      - feature: "Accès entre 8h et 21h pour 12 personnes par code QR"
-    description: >
-                Une pièce idéale pour les séances de votre société ou association
-    price: 19.-
-    frequency: "heure"
-    badge:
-    buttonTarget: "/conference"
-    buttonText: "Réservez la salle"
+      - packcage: "Salle de conférence"
+        features:
+          - feature: "Accès entre 8h et 21h pour 12 personnes par code QR"
+        description: >
+                    Une pièce idéale pour les séances de votre société ou association
+        price: 19.-
+        frequency: "heure"
+        badge:
+        buttonTarget: "/conference"
+        buttonText: "Réservez la salle"
 
-  - packcage: "Domiciliation"
-    features:
-      - feature: "Adresse de représentation"
-      - feature: "Boîte aux lettres et domiciliation postale"
-      - feature: "Votre logo à l'entrée de l'espace"
-    description: >
+  - title: "Domiciliation"
+    subtitle: >
                 Domiciliez votre entreprise au centre de Fully (1926).
-    price: 79.-
-    frequency: "mois"
-    badge:
-    buttonTarget: "/contact" 
-    buttonText: "Contactez-nous"   
+    itemPrices:
+
+      - packcage: "Domiciliation"
+        features:
+          - feature: "Adresse de représentation"
+          - feature: "Boîte aux lettres et domiciliation postale"
+          - feature: "Votre logo à l'entrée de l'espace"
+        description: >
+                    Domiciliez votre entreprise au centre de Fully (1926).
+        price: 79.-
+        frequency: "mois"
+        badge:
+        buttonTarget: "/contact"
+        buttonText: "Contactez-nous"
 ---
