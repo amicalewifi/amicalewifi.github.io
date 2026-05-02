@@ -1,0 +1,23 @@
+{{with .Site.Data.hero}}
+{{if .enable}}
+  <section class="hero" id="hero">
+    <h1 class="sr-only">{{ .title }}{{ with .subtitle }} — {{ . | plainify | chomp }}{{ end }}</h1>
+    <picture class="hero-bg-picture">
+      <source type="image/webp"
+        srcset="{{ "images/hero/opt/header-768.webp" | absURL }} 768w,
+                {{ "images/hero/opt/header-1280.webp" | absURL }} 1280w,
+                {{ "images/hero/opt/header-1920.webp" | absURL }} 1920w"
+        sizes="100vw">
+      <img src="{{ "images/hero/opt/header-1280.jpg" | absURL }}"
+           srcset="{{ "images/hero/opt/header-768.jpg" | absURL }} 768w,
+                   {{ "images/hero/opt/header-1280.jpg" | absURL }} 1280w,
+                   {{ "images/hero/opt/header-1920.jpg" | absURL }} 1920w"
+           sizes="100vw"
+           width="1920" height="1270"
+           fetchpriority="high"
+           decoding="async"
+           alt="">
+    </picture>
+  </section>
+{{end}}
+{{end}}
