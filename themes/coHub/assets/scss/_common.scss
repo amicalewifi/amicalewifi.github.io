@@ -1,6 +1,8 @@
-// Accessibility: body content links must be distinguishable beyond color (WCAG 1.4.1).
-// Underline links inside text content; nav/buttons opt out via class-targeted overrides below.
+// Accessibility: body content links must be distinguishable beyond color (WCAG 1.4.1)
+// AND meet contrast (WCAG 1.4.3). Bootstrap's default #007bff fails 4.5:1 on white;
+// $primary-color (#0058b0) passes AA. Underline + darker color, scoped to text content.
 main a:not(.btn):not(.nav-link):not(.navbar-brand):not(.gallery-item a):not([class*="paylink"]) {
+  color: $primary-color;
   text-decoration: underline;
   text-underline-offset: 2px;
 }
