@@ -6,6 +6,14 @@ title = "l'Amicale du Wifi - Espace associatif de coworking au centre de Fully e
 
 disableKinds = ["taxonomy", "term"]
 
+# Use the last git commit time of each content file as Lastmod, so the
+# sitemap's <lastmod> reflects real content updates instead of the static
+# `date` in frontmatter.
+enableGitInfo = true
+
+[frontmatter]
+  lastmod = [":git", "lastmod", "date", "publishDate"]
+
 [sitemap]
   changefreq = "monthly"
   priority = 0.5

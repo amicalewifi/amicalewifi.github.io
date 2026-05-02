@@ -4,6 +4,8 @@
 
 [build.environment]
   HUGO_VERSION = "0.124.1"
+  # Full git history so Hugo's enableGitInfo can read each file's last commit time.
+  GIT_DEPTH = "0"
 
 # Per-route cache rules — Netlify reads /_headers too, but having
 # them here documents the intent inline.
