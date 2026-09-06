@@ -1,0 +1,172 @@
+---
+# Contenu de la page /mentoring — « Un repas, deux mentors »
+# Modifiez ce fichier plutôt que le layout themes/coHub/layouts/mentoring/list.html
+
+hero:
+  badge: "Fully, Valais · tous les vendredis midi"
+  title: "Un repas, deux mentors, <em>des pistes</em> pour votre projet."
+  intro: >
+          Entreprendre seul est dur. Deux mentors qui l'ont déjà vécu partagent leur table et
+          leur expérience : des conseils bienveillants, désintéressés et applicables pour passer
+          de zéro à un à l'ère de l'IA.
+  ctaPrimary: "Réserver mon repas"
+  ctaSecondary: "Voir comment ça marche"
+  card:
+    day: "Vendredi"
+    time: "12h15"
+    lines:
+      - "1 entrepreneur"
+      - "2 mentors"
+      - "1 h 30"
+    tagPrimary: "Conseils gratuits"
+    tagSecondary: "Sans engagement"
+
+principles:
+  - title: "Bienveillants."
+    text: >
+            Pas de pitch, pas de jury. Quand on avance seul, on manque de regards extérieurs.
+            Deux personnes qui ont connu vos doutes vous écoutent d'abord, puis vous parlent
+            franchement.
+  - title: "Désintéressés."
+    text: >
+            Les mentors ne vendent rien, n'investissent pas et n'attendent rien en retour.
+            Leur seul intérêt : que votre projet avance.
+  - title: "Applicables."
+    text: >
+            Pas de théorie. Des pistes concrètes à tester dès lundi : premiers clients, prix,
+            quoi construire en premier, et ce que l'IA change vraiment pour vous.
+
+steps:
+  title: "Comment ça marche"
+  subtitle: "Trois étapes, zéro paperasse."
+  items:
+    - number: "1"
+      title: "Vous nous parlez de votre projet"
+      text: >
+              Un court formulaire : où vous en êtes, ce qui vous bloque. Cinq minutes, pas plus.
+    - number: "2"
+      title: "On vous associe à deux mentors"
+      text: >
+              Selon votre secteur et vos défis, vous choisissez un vendredi. On s'occupe de la table.
+    - number: "3"
+      title: "Vous déjeunez, vous repartez avec des pistes"
+      highlight: true
+      text: >
+              1 h 30 à Fully, à trois autour d'une table. Vous repartez avec deux ou trois pistes
+              concrètes à explorer dans la semaine.
+
+menu:
+  title: "Au menu"
+  subtitle: >
+              Les sujets qui reviennent le plus souvent à table. Vous apportez les vôtres.
+  topics:
+    - name: "Go-to-market"
+      text: "Par où commencer, à qui vendre en premier, comment le dire simplement."
+    - name: "De zéro à un"
+      text: "Passer de l'idée au premier client payant sans se disperser."
+    - name: "Prix et positionnement"
+      text: "Combien facturer, à qui, et comment le justifier."
+    - name: "IA dans votre produit"
+      text: "Ce qui vaut la peine d'être construit aujourd'hui, ce qui sera commodité demain."
+    - name: "Tenir la distance"
+      text: "Trésorerie, énergie, priorités. Le quotidien du fondateur solo."
+
+mentors:
+  title: "À votre table"
+  subtitle: "Des fondateurs et opérateurs du Valais et d'ailleurs."
+  footnote: >
+              Vous avez lancé une entreprise et vous voulez donner un coup de main ?
+  footnoteLink: "Rejoignez les mentors"
+  people:
+    - initials: "T"
+      name: "Timothée"
+      role: "Product manager"
+      tags: ["Produit", "Innovation"]
+    - initials: "O"
+      name: "Olivier"
+      role: "Fondateur"
+      tags: ["Zéro à un", "Go-to-market"]
+    - initials: "G"
+      name: "Geoffroy"
+      role: "Designer"
+      tags: ["Design", "Expérience utilisateur"]
+    - initials: "G"
+      name: "Gautier"
+      role: "Entrepreneur"
+      tags: ["Go-to-market"]
+    - initials: "J"
+      name: "Julien"
+      role: "Ingénieur"
+      tags: ["IA"]
+
+# ⚠️ Témoignages repris tels quels de la maquette : ce sont des exemples fictifs.
+# Remplacez-les par de vrais retours (ou passez `enable: false`) avant la mise en ligne.
+testimonials:
+  enable: false
+  items:
+    - quote: >
+              Je suis arrivée avec un deck de 30 slides. Je suis repartie avec une seule question
+              à poser à mes dix premiers clients. Ça a tout changé.
+      author: "Léa · fondatrice, solution RH pour PME"
+    - quote: >
+              On m'a dit d'arrêter de construire et d'aller vendre. Trois semaines plus tard
+              j'avais mon premier contrat.
+      author: "Marc · agritech, Martigny"
+    - quote: >
+              Pas de langue de bois. Les mentors ont testé mon idée comme de vrais clients
+              l'auraient fait. Exactement ce dont j'avais besoin.
+      author: "Sami · app de réservation pour artisans"
+
+faq:
+  title: "Questions fréquentes"
+  items:
+    - question: "Combien ça coûte ?"
+      answer: >
+              Le conseil est gratuit : les mentors sont bénévoles. Chacun règle son propre repas
+              au restaurant. On vous demande juste d'être à l'heure et de venir préparé.
+    - question: "Faut-il déjà avoir une entreprise ?"
+      answer: >
+              Non. Une idée sérieuse suffit. Beaucoup de nos meilleurs repas ont lieu avant la
+              création de la société.
+    - question: "Comment choisissez-vous les mentors ?"
+      answer: >
+              On lit vos réponses et on compose un duo dont les expériences se complètent et
+              collent à vos défis. Deux regards valent mieux qu'un : ça évite les angles morts.
+    - question: "Où exactement à Fully ?"
+      answer: >
+              Dans un restaurant partenaire au centre du village. L'adresse précise vous est
+              envoyée avec la confirmation.
+    - question: "Puis-je revenir ?"
+      answer: >
+              Oui. Un repas par mois maximum par projet, pour laisser la place aux autres.
+              Beaucoup de fondateurs reviennent trois mois plus tard pour faire le point.
+
+booking:
+  title: "Réserver un repas"
+  intro: >
+          Parlez-nous de votre projet, puis choisissez votre vendredi. On confirme par e-mail
+          sous 48 h.
+  stepLabels:
+    - "Votre projet"
+    - "Votre créneau"
+    - "Confirmé"
+  privacy: "Vos réponses ne sont partagées qu'avec vos mentors."
+  sinceOptions:
+    - value: "Encore une idée"
+      label: "Encore une idée"
+    - value: "Moins de 3 mois"
+      label: "Moins de 3 mois"
+    - value: "3 à 12 mois"
+      label: "3 à 12 mois"
+    - value: "Plus d'un an"
+      label: "Plus d'un an"
+  launchOptions:
+    - "Pas encore"
+    - "En bêta / test"
+    - "Oui, avec des clients"
+  slots:
+    - time: "12h15 – 13h45"
+      place: "Table du fond, restaurant partenaire"
+    - time: "12h30 – 14h00"
+      place: "Terrasse (selon météo)"
+---

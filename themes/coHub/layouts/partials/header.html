@@ -19,8 +19,9 @@
           {{ $currentPage := . }}
           {{ $menu := .Site.Menus.main}}
           {{range $index, $element := $menu}}
-          <li class="nav-item {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{ end }}">
-             <a class="nav-link scroll-to" href="{{ $.Site.BaseURL }}{{ .URL }}">{{.Name}}</a>
+          {{ $highlight := .Params.highlight }}
+          <li class="nav-item{{ if $highlight }} nav-item-cta{{ end }} {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{ end }}">
+             <a class="nav-link scroll-to{{ if $highlight }} nav-link-cta{{ end }}" href="{{ $.Site.BaseURL }}{{ .URL }}">{{.Name}}</a>
           </li>
           {{end}}
         </ul>

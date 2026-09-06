@@ -35,6 +35,34 @@
       }
     }
 
+    // Highlighted entry (menu.main params.highlight = true): rendered as a
+    // filled CTA button instead of a plain link. `!important` is needed to
+    // beat `.nav-bg .nav-link { color: ... !important }` on inner pages.
+    .nav-item-cta {
+      .nav-link-cta {
+        color: $white !important;
+        background: $primary-color;
+        border: 1px solid $primary-color;
+        border-radius: 4px;
+        padding: 10px 24px;
+        margin-left: 15px;
+        transition: all 0.3s $site-ease;
+
+        &:hover,
+        &:focus {
+          background: darken($primary-color, 8%);
+          border-color: darken($primary-color, 8%);
+          transform: translateY(-2px);
+        }
+
+        @include desktop {
+          display: inline-block;
+          margin-left: 0;
+          margin-top: 10px;
+        }
+      }
+    }
+
     @include desktop {
       align-items: center;
     }
