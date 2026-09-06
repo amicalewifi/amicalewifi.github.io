@@ -86,7 +86,12 @@
         function trigger(){ events.forEach(function(e){ window.removeEventListener(e, trigger, {passive:true}); }); loadGA(); }
         events.forEach(function(e){ window.addEventListener(e, trigger, {passive:true, once:true}); });
         // Fallback: if no interaction, load during idle time after 8s.
-        var fallback = function(){ ('requestIdleCallback' in window ? requestIdleCallback : setTimeout)(loadGA, 1); };
+        // requestIdleCallback takes an options object, not a delay, so it can't
+        // share a call signature with setTimeout.
+        var fallback = function(){
+          if ('requestIdleCallback' in window) { window.requestIdleCallback(loadGA, {timeout: 2000}); }
+          else { setTimeout(loadGA, 1); }
+        };
         setTimeout(fallback, 8000);
       })();
     </script>
