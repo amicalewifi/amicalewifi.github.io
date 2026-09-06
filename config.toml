@@ -77,6 +77,10 @@ enableGitInfo = true
   contactLink = "contact"
   copyright = "© {year} Association Fully Coworking"
   formspreeURL = "https://formspree.io/f/xbjwnjde"
+  # Endpoint Formspree dédié aux réservations de mentoring, si vous voulez
+  # qu'elles arrivent sur une autre adresse que le formulaire de contact.
+  # Laisser vide : les réservations partent vers formspreeURL.
+  formspreeMentoringURL = ""
   googleAnalytics = "G-6X4QETH7V7"
   logo = "images/logo.svg"
   footerlogo = "images/logo.svg"

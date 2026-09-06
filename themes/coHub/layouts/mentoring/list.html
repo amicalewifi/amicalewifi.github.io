@@ -189,7 +189,7 @@
           </ol>
         </div>
 
-        <form id="mentoring-form" action="{{ $.Site.Params.formspreeURL }}" method="POST" novalidate>
+        <form id="mentoring-form" action="{{ or $.Site.Params.formspreeMentoringURL $.Site.Params.formspreeURL }}" method="POST" novalidate>
           <input type="hidden" name="type" value="repas de mentoring">
           <input type="hidden" name="Créneau" id="mentoring-slot-field" value="">
           <input type="hidden" name="Date" id="mentoring-date-field" value="">
@@ -287,7 +287,6 @@
             <strong id="mentoring-done-date"></strong> à Fully. Vous recevrez une confirmation
             avec les noms de vos deux mentors sous 48&nbsp;h.
           </p>
-          <button type="button" class="mentoring-reset" id="mentoring-reset">Réserver pour quelqu'un d'autre</button>
         </div>
         <p class="mentoring-error" id="mentoring-error" role="alert" hidden></p>
       </div>
