@@ -816,16 +816,6 @@ $mentoring-line: darken($border-color, 6%);
   font-weight: 500;
 }
 
-.mentoring-reset {
-  background: none;
-  border: 1px solid $mentoring-line;
-  padding: 12px 20px;
-  border-radius: 999px;
-  font-size: 15px;
-  cursor: pointer;
-  color: $mentoring-ink;
-}
-
 .mentoring-error {
   margin-top: 20px;
   color: #b00020;

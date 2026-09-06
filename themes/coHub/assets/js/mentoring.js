@@ -214,23 +214,6 @@
         errorEl.hidden = false;
       });
     });
-
-    document.getElementById("mentoring-reset").addEventListener("click", function () {
-      form.reset();
-      selectedDate = null;
-      dateField.value = "";
-      launchedField.value = "";
-      selectedDateEl.textContent = "Choisissez une date";
-      slotsEl.hidden = true;
-      slotEmptyEl.hidden = false;
-      clearSlot();
-      Array.prototype.forEach.call(document.querySelectorAll(".mentoring-choice"), function (el) {
-        el.classList.remove("is-selected");
-        el.setAttribute("aria-pressed", "false");
-      });
-      syncConfirm();
-      showStep(1);
-    });
   }
 
   window.addEventListener("DOMContentLoaded", function () {

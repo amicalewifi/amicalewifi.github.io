@@ -166,5 +166,5 @@ booking:
     - "Oui, avec des clients"
   slots:
     - time: "12h15 – 13h45"
-      place: "Table du fond, restaurant partenaire"
+      place: "Restaurant partenaire"
 ---
