@@ -1,0 +1,833 @@
+// Page /mentoring — reprend la structure de la maquette (héros, étapes,
+// menu des sujets, mentors, FAQ, réservation) avec la palette et les
+// typographies du site.
+
+$mentoring-ink: $text-color-dark;
+$mentoring-surface: $white;
+$mentoring-line: darken($border-color, 6%);
+
+.mentoring {
+  padding-top: 140px;
+  // Sous 992px la navbar repliée est plus haute (logo carré) : ~140px.
+  @include desktop {
+    padding-top: 170px;
+  }
+
+  h2,
+  h3 {
+    font-family: $primary-font;
+    color: $mentoring-ink;
+  }
+
+  p {
+    color: $text-color;
+    line-height: 1.7;
+  }
+}
+
+// La navbar est en position:fixed — on décale les ancres pour que les titres
+// ne passent pas dessous quand on clique sur un lien du sommaire.
+#comment,
+#mentors,
+#faq,
+#reserver {
+  scroll-margin-top: 130px;
+  @include desktop {
+    scroll-margin-top: 160px;
+  }
+}
+
+.mentoring-section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+
+  h2 {
+    font-size: 38px;
+    font-weight: 400;
+    margin: 0;
+    @include tablet {
+      font-size: 30px;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+
+  &-stacked {
+    display: block;
+    h2 {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+// ---------- Héros ----------
+.mentoring-hero {
+  padding-bottom: 80px;
+}
+
+.mentoring-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: $primary-color;
+  border: 1px solid $primary-color;
+  border-radius: 999px;
+  padding: 6px 16px;
+  margin-bottom: 26px;
+}
+
+.mentoring-badge-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: $primary-color;
+}
+
+.mentoring-title {
+  font-family: $primary-font;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 1.06;
+  letter-spacing: -0.01em;
+  margin: 0 0 22px;
+  color: $mentoring-ink;
+
+  em {
+    font-style: italic;
+    color: $primary-color;
+  }
+
+  @include desktop {
+    font-size: 42px;
+  }
+  @include mobile {
+    font-size: 34px;
+  }
+}
+
+.mentoring-lead {
+  font-size: 18px;
+  max-width: 520px;
+  margin: 0 0 32px;
+}
+
+.mentoring-hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+
+  .btn-primary {
+    border-radius: 999px;
+  }
+}
+
+.mentoring-link-arrow {
+  font-weight: 500;
+  color: $mentoring-ink;
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+// Assiette dressée : le visuel rond de la maquette.
+.mentoring-plate {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background: $mentoring-surface;
+  border: 1px solid $mentoring-line;
+  box-shadow: 0 30px 60px -30px rgba(0, 0, 0, 0.25);
+  display: grid;
+  place-items: center;
+
+  @include desktop {
+    margin-top: 50px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 11%;
+    border-radius: 50%;
+    border: 1px dashed $mentoring-line;
+  }
+}
+
+.mentoring-plate-inner {
+  text-align: center;
+  padding: 20%;
+}
+
+.mentoring-plate-day {
+  font-family: $primary-font;
+  font-size: 28px;
+  line-height: 1.15;
+  color: $mentoring-ink;
+  margin: 0;
+}
+
+.mentoring-plate-rule {
+  display: block;
+  width: 48px;
+  height: 1px;
+  background: $primary-color;
+  margin: 14px auto;
+}
+
+.mentoring-plate-lines {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.mentoring-chip {
+  position: absolute;
+  padding: 10px 16px;
+  border-radius: 14px;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.mentoring-chip-primary {
+  right: 0;
+  top: 6%;
+  background: $primary-color;
+  color: $white;
+  box-shadow: 0 12px 24px -12px rgba(0, 88, 176, 0.6);
+}
+
+.mentoring-chip-dark {
+  left: 0;
+  bottom: 10%;
+  background: $mentoring-ink;
+  color: $white;
+}
+
+// ---------- Principes ----------
+.mentoring-principles {
+  padding: 56px 0;
+  border-top: 1px solid $mentoring-line;
+  border-bottom: 1px solid $mentoring-line;
+
+  .col-lg-4 {
+    @include desktop {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.mentoring-principle-title {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+// ---------- Étapes ----------
+.mentoring-steps {
+  padding: 88px 0 40px;
+}
+
+.mentoring-step {
+  background: $mentoring-surface;
+  border: 1px solid $mentoring-line;
+  border-radius: 20px;
+  padding: 32px;
+  height: 100%;
+  margin-bottom: 20px;
+
+  h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 18px 0 12px;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  &-highlight {
+    background: $mentoring-ink;
+    border-color: $mentoring-ink;
+
+    h3,
+    .mentoring-step-number {
+      color: $white;
+    }
+
+    p {
+      color: rgba($white, 0.75);
+    }
+  }
+}
+
+.mentoring-step-number {
+  display: block;
+  font-family: $primary-font;
+  font-size: 52px;
+  line-height: 1;
+  color: $primary-color;
+}
+
+// ---------- Au menu ----------
+.mentoring-menu {
+  padding: 56px 0 88px;
+}
+
+.mentoring-topics {
+  margin: 0;
+}
+
+.mentoring-topic {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 0;
+  border-top: 1px solid $mentoring-line;
+
+  &:last-child {
+    border-bottom: 1px solid $mentoring-line;
+  }
+
+  dt {
+    font-weight: 500;
+    font-size: 18px;
+    color: $mentoring-ink;
+  }
+
+  dd {
+    margin: 0;
+    color: $text-color;
+    text-align: right;
+    max-width: 55%;
+  }
+
+  @include tablet {
+    flex-direction: column;
+    gap: 6px;
+
+    dd {
+      text-align: left;
+      max-width: none;
+    }
+  }
+}
+
+// ---------- Mentors ----------
+.mentoring-people {
+  padding-bottom: 88px;
+}
+
+.mentoring-person {
+  background: $mentoring-surface;
+  border: 1px solid $mentoring-line;
+  border-radius: 20px;
+  padding: 24px;
+  height: 100%;
+  margin-bottom: 20px;
+  transition: border-color 0.3s $site-ease;
+
+  &:hover {
+    border-color: $primary-color;
+  }
+
+  h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 14px 0 2px;
+  }
+}
+
+.mentoring-person-avatar {
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: $bg-color;
+  color: $primary-color;
+  font-family: $primary-font;
+  font-size: 22px;
+}
+
+.mentoring-person-role {
+  font-size: 15px;
+  margin: 0 0 14px;
+}
+
+.mentoring-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    font-size: 13px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: $bg-color;
+    color: $mentoring-ink;
+  }
+}
+
+.mentoring-people-footnote {
+  font-size: 15px;
+  margin: 24px 0 0;
+}
+
+// ---------- Témoignages ----------
+.mentoring-quotes {
+  padding-bottom: 88px;
+}
+
+.mentoring-quote {
+  background: $mentoring-ink;
+  border-radius: 28px;
+  padding: 40px 32px;
+  height: 100%;
+  margin: 0 0 20px;
+
+  blockquote {
+    margin: 12px 0 20px;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 1.4;
+    color: $white;
+    margin: 0;
+  }
+
+  figcaption {
+    font-size: 15px;
+    color: rgba($white, 0.7);
+  }
+}
+
+.mentoring-quote-mark {
+  font-family: $primary-font;
+  font-size: 48px;
+  line-height: 1;
+  color: lighten($secondary-color, 10%);
+}
+
+// ---------- FAQ ----------
+.mentoring-faq {
+  padding-bottom: 88px;
+}
+
+.mentoring-accordion-item {
+  border-top: 1px solid $mentoring-line;
+
+  &:last-child {
+    border-bottom: 1px solid $mentoring-line;
+  }
+
+  h3 {
+    margin: 0;
+  }
+}
+
+.mentoring-accordion-trigger {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  padding: 20px 0;
+  background: none;
+  border: 0;
+  text-align: left;
+  cursor: pointer;
+  font-family: $primary-font;
+  font-size: 18px;
+  font-weight: 500;
+  color: $mentoring-ink;
+}
+
+// Le « + » devient « − » quand le panneau est ouvert.
+.mentoring-accordion-icon {
+  flex: none;
+  font-size: 22px;
+  line-height: 1;
+  color: $primary-color;
+
+  &::before {
+    content: "+";
+  }
+}
+
+.mentoring-accordion-trigger[aria-expanded="true"] .mentoring-accordion-icon::before {
+  content: "\2212";
+}
+
+.mentoring-accordion-panel p {
+  margin: 0 0 22px;
+  max-width: 560px;
+}
+
+// ---------- Réservation ----------
+.mentoring-booking {
+  padding-bottom: 88px;
+}
+
+.mentoring-booking-card {
+  background: $mentoring-surface;
+  border: 1px solid $mentoring-line;
+  border-radius: 28px;
+  padding: 48px;
+
+  @include tablet {
+    padding: 28px 20px;
+    border-radius: 20px;
+  }
+
+  h2 {
+    font-size: 38px;
+    font-weight: 400;
+    margin: 0 0 12px;
+    @include tablet {
+      font-size: 28px;
+    }
+  }
+
+  .form-control {
+    background: $body-color;
+    border: 1px solid $mentoring-line;
+    border-radius: 12px;
+    padding: 14px 16px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 20px;
+    color: $mentoring-ink;
+  }
+
+  // Bootstrap impose `select.form-control:not([size]):not([multiple])
+  // { height: calc(2.25rem + 2px) }`, ce qui rognait le texte sous notre
+  // padding vertical. On répète le sélecteur pour gagner en spécificité.
+  select.form-control:not([size]):not([multiple]) {
+    height: auto;
+  }
+}
+
+.mentoring-booking-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+
+  p {
+    margin: 0;
+    max-width: 520px;
+  }
+}
+
+.mentoring-progress {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: $text-color;
+}
+
+.mentoring-progress-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  &:not(:last-child)::after {
+    content: "";
+    width: 32px;
+    height: 1px;
+    background: $mentoring-line;
+    margin-left: 12px;
+  }
+
+  &.is-current .mentoring-progress-dot {
+    background: $primary-color;
+    color: $white;
+  }
+
+  &.is-done .mentoring-progress-dot {
+    background: $mentoring-ink;
+    color: $white;
+  }
+}
+
+.mentoring-progress-dot {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: $border-color;
+  color: $text-color;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.mentoring-panel {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0; // évite que <fieldset> impose une largeur mini
+}
+
+.mentoring-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: $mentoring-ink;
+  margin-bottom: 8px;
+}
+
+.mentoring-choices {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.mentoring-choice {
+  padding: 12px 18px;
+  border-radius: 999px;
+  border: 1px solid $mentoring-line;
+  background: $body-color;
+  color: $mentoring-ink;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.2s $site-ease;
+
+  &.is-selected {
+    background: $mentoring-ink;
+    border-color: $mentoring-ink;
+    color: $white;
+  }
+}
+
+.mentoring-panel-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+
+  .btn-primary {
+    border-radius: 999px;
+
+    &:disabled {
+      background: $text-color;
+      border-color: $text-color;
+      cursor: not-allowed;
+      transform: none;
+    }
+  }
+}
+
+.mentoring-privacy {
+  font-size: 14px;
+  margin: 0;
+}
+
+// Calendrier
+.mentoring-calendar-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.mentoring-calendar-month {
+  font-family: $primary-font;
+  font-size: 20px;
+  color: $mentoring-ink;
+  margin: 0;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+
+.mentoring-calendar-nav {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid $mentoring-line;
+  background: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: $mentoring-ink;
+}
+
+.mentoring-calendar-weekdays,
+.mentoring-calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+
+.mentoring-calendar-weekdays {
+  text-align: center;
+  font-size: 13px;
+  color: $text-color;
+  margin-bottom: 8px;
+}
+
+.mentoring-day {
+  aspect-ratio: 1 / 1;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: lighten($text-color, 25%);
+  font-size: 15px;
+
+  &.is-empty {
+    visibility: hidden;
+  }
+
+  &.is-available {
+    background: $bg-color;
+    color: $primary-color;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  &.is-selected {
+    background: $mentoring-ink;
+    color: $white;
+  }
+}
+
+.mentoring-calendar-note {
+  font-size: 14px;
+  margin: 20px 0 0;
+}
+
+// Créneaux
+.mentoring-slot-title {
+  font-weight: 500;
+  font-size: 18px;
+  color: $mentoring-ink;
+
+  // « vendredi 11 septembre » → « Vendredi 11 septembre » : seule la première
+  // lettre, pas chaque mot (ce que ferait text-transform: capitalize).
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+
+.mentoring-slots {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.mentoring-slot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  border-radius: 14px;
+  border: 1px solid $mentoring-line;
+  background: $body-color;
+  color: $mentoring-ink;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s $site-ease;
+
+  &.is-selected {
+    background: $mentoring-ink;
+    border-color: $mentoring-ink;
+    color: $white;
+  }
+}
+
+.mentoring-slot-time {
+  font-weight: 500;
+}
+
+.mentoring-slot-place {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.mentoring-back {
+  background: none;
+  border: 0;
+  color: $text-color;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 12px 0;
+}
+
+// Confirmation
+.mentoring-done {
+  text-align: center;
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 24px 0 8px;
+}
+
+.mentoring-done-check {
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: $primary-color;
+  color: $white;
+  font-size: 28px;
+  margin: 0 auto 24px;
+}
+
+.mentoring-done-title {
+  font-family: $primary-font;
+  font-size: 30px;
+  line-height: 1.15;
+  color: $mentoring-ink;
+  margin-bottom: 12px;
+}
+
+.mentoring-done-text strong {
+  color: $mentoring-ink;
+  font-weight: 500;
+}
+
+.mentoring-reset {
+  background: none;
+  border: 1px solid $mentoring-line;
+  padding: 12px 20px;
+  border-radius: 999px;
+  font-size: 15px;
+  cursor: pointer;
+  color: $mentoring-ink;
+}
+
+.mentoring-error {
+  margin-top: 20px;
+  color: #b00020;
+  font-weight: 500;
+}

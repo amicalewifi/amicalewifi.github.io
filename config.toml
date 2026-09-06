@@ -53,6 +53,14 @@ enableGitInfo = true
   name = "Contact"
   url = "/contact/"
   weight = 5
+# `highlight` renders this entry as a filled CTA button in the navbar
+# (see partials/header.html + components/_navigation.scss).
+[[menu.main]]
+  name = "Mentoring"
+  url = "/mentoring/"
+  weight = 6
+  [menu.main.params]
+    highlight = true
 
 # Sitemap Menu
 [[menu.sitemap]]
