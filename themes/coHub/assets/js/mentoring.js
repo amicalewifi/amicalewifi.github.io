@@ -69,6 +69,28 @@
       confirmBtn.disabled = !(selectedDate && selectedSlot);
     }
 
+    var slotButtons = document.querySelectorAll(".mentoring-slot");
+
+    function selectSlot(slot) {
+      Array.prototype.forEach.call(slotButtons, function (s) {
+        var on = s === slot;
+        s.classList.toggle("is-selected", on);
+        s.setAttribute("aria-pressed", on ? "true" : "false");
+      });
+      selectedSlot = slot.getAttribute("data-slot");
+      slotField.value = selectedSlot;
+      syncConfirm();
+    }
+
+    function clearSlot() {
+      Array.prototype.forEach.call(slotButtons, function (s) {
+        s.classList.remove("is-selected");
+        s.setAttribute("aria-pressed", "false");
+      });
+      selectedSlot = null;
+      slotField.value = "";
+    }
+
     function renderMonth() {
       monthEl.textContent = MONTHS[month.getMonth()] + " " + month.getFullYear();
       daysEl.innerHTML = "";
@@ -105,16 +127,14 @@
             }
             btn.addEventListener("click", function () {
               selectedDate = dt;
-              selectedSlot = null;
               dateField.value = longDate(dt);
-              slotField.value = "";
               selectedDateEl.textContent = longDate(dt);
               slotEmptyEl.hidden = true;
               slotsEl.hidden = false;
-              Array.prototype.forEach.call(slotsEl.querySelectorAll(".mentoring-slot"), function (s) {
-                s.classList.remove("is-selected");
-                s.setAttribute("aria-pressed", "false");
-              });
+              clearSlot();
+              // Un seul créneau proposé : le retenir d'office plutôt que
+              // d'imposer un clic sans alternative.
+              if (slotButtons.length === 1) { selectSlot(slotButtons[0]); }
               renderMonth();
               syncConfirm();
             });
@@ -165,18 +185,8 @@
       });
     });
 
-    Array.prototype.forEach.call(document.querySelectorAll(".mentoring-slot"), function (slot) {
-      slot.addEventListener("click", function () {
-        Array.prototype.forEach.call(document.querySelectorAll(".mentoring-slot"), function (s) {
-          s.classList.remove("is-selected");
-          s.setAttribute("aria-pressed", "false");
-        });
-        slot.classList.add("is-selected");
-        slot.setAttribute("aria-pressed", "true");
-        selectedSlot = slot.getAttribute("data-slot");
-        slotField.value = selectedSlot;
-        syncConfirm();
-      });
+    Array.prototype.forEach.call(slotButtons, function (slot) {
+      slot.addEventListener("click", function () { selectSlot(slot); });
     });
 
     form.addEventListener("submit", function (ev) {
@@ -208,14 +218,13 @@
     document.getElementById("mentoring-reset").addEventListener("click", function () {
       form.reset();
       selectedDate = null;
-      selectedSlot = null;
       dateField.value = "";
-      slotField.value = "";
       launchedField.value = "";
       selectedDateEl.textContent = "Choisissez une date";
       slotsEl.hidden = true;
       slotEmptyEl.hidden = false;
-      Array.prototype.forEach.call(document.querySelectorAll(".mentoring-choice, .mentoring-slot"), function (el) {
+      clearSlot();
+      Array.prototype.forEach.call(document.querySelectorAll(".mentoring-choice"), function (el) {
         el.classList.remove("is-selected");
         el.setAttribute("aria-pressed", "false");
       });

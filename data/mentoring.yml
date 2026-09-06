@@ -167,6 +167,4 @@ booking:
   slots:
     - time: "12h15 – 13h45"
       place: "Table du fond, restaurant partenaire"
-    - time: "12h30 – 14h00"
-      place: "Terrasse (selon météo)"
 ---
